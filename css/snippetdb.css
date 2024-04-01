@@ -32,3 +32,13 @@ code {
 .php {
   border-left: 5px solid #aeb2d5;
 }
+
+.suggestion-link {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.suggestion-link:hover {
+  font-weight: bold;
+  cursor: pointer;
+}

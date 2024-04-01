@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 matchingSnippets.slice(0, 10).forEach((snippet) => {
                     const suggestionElement = document.createElement("div");
                     suggestionElement.textContent = snippet.question;
+                    suggestionElement.classList.add("suggestion-link");
                     suggestionElement.addEventListener("click", () => {
                         displayCodeSnippet(snippet);
                         searchInput.value = "";
