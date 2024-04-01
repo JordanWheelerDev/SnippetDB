@@ -13,3 +13,8 @@ We welcome contributions from the community to help expand and improve the snipp
 3. **Report Issues**: Encountered a bug or have a suggestion for improvement? Open an issue on the repository, describing the problem or enhancement you'd like to see. We appreciate your feedback and will work to address any issues promptly.
 
 4. **Spread the Word**: Help us grow the snippetDB community by sharing it with your friends and colleagues. The more contributors we have, the richer and more valuable the repository becomes for everyone.
+
+## Get Started
+
+To get started with snippetDB, visit our [GitHub Pages](https://jordanwheelerdev.github.io/snippetdb) to explore the collection of code snippets in various programming languages and technologies. You can use the search functionality to quickly locate snippets based on keywords or topics of interest.
+
