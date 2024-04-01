@@ -1,0 +1,296 @@
+[
+    {
+        "language": "HTML",
+        "question": "How to create an HTML boilerplate?",
+        "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>HTML Boilerplate</title>\n</head>\n<body>\n    <h1>HTML Boilerplate</h1>\n    <!-- Your content goes here -->\n</body>\n</html>",
+        "explanation": "When creating an HTML document, it's essential to start with a basic structure known as an HTML boilerplate. This boilerplate provides the foundation for your web page and typically includes the DOCTYPE declaration, root HTML element, head section with meta-information, and body section with the content of the web page. The DOCTYPE declaration defines the document type and version of HTML being used. The lang attribute in the HTML element specifies the language of the document. The meta tags in the head section provide metadata about the document, such as character encoding and viewport settings. The title element sets the title of the document, which appears in the browser's title bar or tab. Inside the body section, you can add your content, such as headings, paragraphs, images, links, and other elements."
+    },
+    {
+        "language": "HTML",
+        "question": "How to create heading tags in HTML?",
+        "code": "<h1>Main Heading</h1>\n<h2>Subheading</h2>\n<h3>Sub-subheading</h3>",
+        "explanation": "Heading tags in HTML are used to define headings and subheadings on a webpage. There are six levels of heading tags, from <h1> to <h6>. The <h1> tag represents the main heading of the page and should be used for the most important content. Subsequent levels of headings, from <h2> to <h6>, represent subheadings of decreasing importance. It's important to use heading tags appropriately to create a well-structured document that is both readable for users and understandable for search engines. Additionally, heading tags provide semantic meaning to the content, which helps with accessibility and SEO."
+    },
+    {
+        "language": "HTML",
+        "question": "How to create a paragraph tag in HTML?",
+        "code": "<p>This is a paragraph.</p>",
+        "explanation": "The paragraph tag, <p>, is used in HTML to define paragraphs of text. It is one of the most commonly used elements for structuring textual content on web pages. When you enclose text within <p>...</p> tags, it indicates to the browser that the content should be treated as a separate paragraph. Paragraphs are typically used to group related sentences or thoughts together, making it easier for users to read and understand the content. It's important to use paragraph tags appropriately to maintain proper document structure and semantic meaning."
+    },
+    {
+        "language": "HTML",
+        "question": "How to create a div tag in HTML?",
+        "code": "<div>This is a div.</div>",
+        "explanation": "The <div> tag is a generic container element used to group together other HTML elements and apply styling or scripting to them collectively. It is one of the most versatile elements in HTML and is commonly used for layout purposes, such as dividing sections of a webpage or creating reusable components. The <div> tag itself does not carry any semantic meaning, so it should be used judiciously to maintain proper document structure and accessibility. It's often paired with CSS to apply styling and JavaScript to add interactivity to the content enclosed within it."
+    },
+    {
+        "language": "HTML",
+        "question": "How to create an anchor tag in HTML?",
+        "code": "<a href=\"https://www.example.com\">Link Text</a>",
+        "explanation": "The anchor tag, <a>, is used in HTML to create hyperlinks. It allows you to link to other web pages, files, or specific sections within the same page. The href attribute specifies the URL of the target resource, while the text enclosed within the opening and closing <a> tags serves as the clickable link text. When users click on the link, they are redirected to the URL specified in the href attribute. Anchor tags are essential for navigation and connecting different parts of a website together. Additionally, they can be styled using CSS to enhance their appearance and provide visual cues to users."
+    },
+    {
+        "language": "HTML",
+        "question": "How to create an image tag in HTML?",
+        "code": "<img src=\"image.jpg\" alt=\"Description of the image\">",
+        "explanation": "The image tag, <img>, is used in HTML to embed images into web pages. It is a self-closing tag, meaning it does not require a closing tag. The src attribute specifies the URL or path to the image file, while the alt attribute provides alternative text for the image. Alternative text is important for accessibility purposes, as it describes the content and function of the image for users who may not be able to view it. It's essential to include descriptive alt text to ensure that all users can understand the purpose of the image, even if they cannot see it. Additionally, the width and height attributes can be used to specify the dimensions of the image, although they are not required."
+    },
+    {
+        "language": "HTML",
+        "question": "How to create an image tag with width and height attributes in HTML?",
+        "code": "<img src=\"image.jpg\" alt=\"Description of the image\" width=\"200\" height=\"150\">",
+        "explanation": "The image tag, <img>, in HTML allows you to embed images into web pages. Along with the src (source) and alt (alternative text) attributes, you can also specify the width and height attributes to control the size of the displayed image. The width attribute sets the width of the image in pixels, while the height attribute sets the height of the image in pixels. By specifying the width and height attributes, you can ensure that the image is displayed at the desired dimensions, providing a consistent layout and improving page load performance. It's important to maintain the aspect ratio of the image when adjusting its dimensions to avoid distortion."
+    },
+    {
+        "language": "HTML",
+        "question": "How to apply inline styling to HTML tags in HTML?",
+        "code": "<h1 style=\"color: blue; font-size: 24px;\">Heading Text</h1>\n<p style=\"font-family: Arial, sans-serif; line-height: 1.5;\">Paragraph Text</p>",
+        "explanation": "In HTML, you can apply inline styles directly to individual HTML tags using the style attribute. The style attribute allows you to specify CSS styles directly within the opening tag of an HTML element. Inside the style attribute, you can define one or more CSS properties and their corresponding values to apply styling to the element. In this example, inline styles are applied to <h1> and <p> tags. The style attribute for the <h1> tag sets the color to blue and the font size to 24 pixels, while the style attribute for the <p> tag sets the font family to Arial or a generic sans-serif font and adjusts the line height to 1.5 times the font size. Inline styling is useful for making quick adjustments to individual elements, but it's important to use it judiciously and consider whether external CSS files or class-based styling might be more appropriate for larger-scale styling needs."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use the style tag to define CSS rules in HTML?",
+        "code": "<style>\n  h1 {\n    color: blue;\n    font-size: 24px;\n  }\n\n  p {\n    font-family: Arial, sans-serif;\n    line-height: 1.5;\n  }\n</style>",
+        "explanation": "In HTML, the <style> tag is used to embed CSS (Cascading Style Sheets) directly within an HTML document. CSS rules defined within the <style> tag apply styles to HTML elements throughout the document. Inside the <style> tag, you can write CSS rules using selectors to target specific HTML elements and apply desired styles to them. In this example, CSS rules are provided to style <h1> and <p> tags. The h1 rule sets the color to blue and the font size to 24 pixels, while the p rule sets the font family to Arial or a generic sans-serif font and adjusts the line height to 1.5 times the font size. By using the <style> tag to define CSS rules, you can achieve consistent styling across multiple elements within the HTML document."
+    },
+    {
+        "language": "HTML",
+        "question": "How to make text bold in HTML?",
+        "code": "<strong>Bold text</strong>",
+        "explanation": "In HTML, the <strong> element is used to indicate that the enclosed text should be rendered with strong importance, typically displayed as bold text by browsers. The <strong> tag is a semantic element, conveying that the text within it is of particular importance or relevance, rather than merely being styled as bold for visual emphasis. It's recommended to use <strong> for text that is important for understanding the content, such as keywords, key phrases, or warnings."
+    },
+    {
+        "language": "HTML",
+        "question": "How to indicate important text in HTML?",
+        "code": "<strong>Important text</strong>",
+        "explanation": "In HTML, the <strong> element is commonly used to indicate text with strong importance, such as warnings, alerts, or key points. While the visual rendering of <strong> text may vary depending on the browser and CSS styles applied, its primary purpose is to convey semantic meaning rather than specific styling. By using <strong> for important text, you signal to both browsers and assistive technologies that the enclosed content should be considered significant within the context of the document."
+    },
+    {
+        "language": "HTML",
+        "question": "How to make text italic in HTML?",
+        "code": "<em>Italic text</em>",
+        "explanation": "In HTML, the <em> element is used to indicate emphasis, typically rendered as italic text by browsers. The <em> tag is a semantic element, conveying that the enclosed text should be emphasized within the context of the document. While the default rendering of <em> text is italic, its primary purpose is to convey semantic meaning rather than specific styling. It's recommended to use <em> for text that needs emphasis or distinction, such as terms being defined, book titles, or stress emphasis in sentences."
+    },
+    {
+        "language": "HTML",
+        "question": "How to emphasize text in HTML?",
+        "code": "<em>Emphasized text</em>",
+        "explanation": "In HTML, the <em> element is commonly used to indicate emphasis, typically rendered as italic text by browsers. The <em> tag is a semantic element, conveying that the enclosed text should be emphasized within the context of the document. While the default rendering of <em> text is italic, its primary purpose is to convey semantic meaning rather than specific styling. By using <em> for emphasized text, you indicate to both browsers and assistive technologies that the content within it should be given emphasis or importance."
+    },
+    {
+        "language": "HTML",
+        "question": "How to mark text in HTML?",
+        "code": "<mark>Marked text</mark>",
+        "explanation": "In HTML, the <mark> element is used to highlight or mark portions of text, typically rendered with a yellow background by browsers. The <mark> tag is a semantic element, conveying that the enclosed text is of particular importance or relevance within the context of the document. While the default rendering of <mark> text includes a yellow background, its primary purpose is to convey semantic meaning rather than specific styling. By using <mark> for marked text, you signal to both browsers and assistive technologies that the enclosed content should be highlighted for emphasis or distinction."
+    },
+    {
+        "language": "HTML",
+        "question": "How to make text smaller in HTML?",
+        "code": "<small>Smaller text</small>",
+        "explanation": "In HTML, the <small> element is used to indicate text that is smaller in size compared to the surrounding text, typically rendered as reduced font size by browsers. The <small> tag is a semantic element, conveying that the enclosed text should be displayed at a smaller scale within the context of the document. While the default rendering of <small> text is reduced font size, its primary purpose is to convey semantic meaning rather than specific styling. By using <small> for smaller text, you indicate to both browsers and assistive technologies that the enclosed content should be displayed at a smaller scale, such as fine print, disclaimers, or copyright notices."
+    },
+    {
+        "language": "HTML",
+        "question": "How to represent deleted text in HTML?",
+        "code": "<del>Deleted text</del>",
+        "explanation": "In HTML, the <del> element is used to indicate text that has been deleted or removed from the document, typically rendered with a strikethrough effect by browsers. The <del> tag is a semantic element, conveying that the enclosed text has been deleted or should be considered no longer valid within the context of the document. While the default rendering of <del> text includes a strikethrough effect, its primary purpose is to convey semantic meaning rather than specific styling. By using <del> for deleted text, you signal to both browsers and assistive technologies that the content within it has been removed or deprecated."
+    },
+    {
+        "language": "HTML",
+        "question": "How to represent inserted text in HTML?",
+        "code": "<ins>Inserted text</ins>",
+        "explanation": "In HTML, the <ins> element is used to indicate text that has been inserted or added to the document, typically rendered with an underline effect by browsers. The <ins> tag is a semantic element, conveying that the enclosed text has been inserted or should be considered newly added within the context of the document. While the default rendering of <ins> text includes an underline effect, its primary purpose is to convey semantic meaning rather than specific styling. By using <ins> for inserted text, you signal to both browsers and assistive technologies that the content within it has been added or introduced."
+    },
+    {
+        "language": "HTML",
+        "question": "How to represent subscript text in HTML?",
+        "code": "H<sub>2</sub>O",
+        "explanation": "In HTML, the <sub> element is used to indicate subscript text, typically rendered with a smaller font size and positioned below the baseline of the surrounding text by browsers. Subscript text is commonly used to represent chemical formulas, mathematical equations, footnotes, or abbreviations. By enclosing text within the <sub> tag, you indicate to both browsers and assistive technologies that the content should be displayed as subscript within the context of the document."
+    },
+    {
+        "language": "HTML",
+        "question": "How to represent superscript text in HTML?",
+        "code": "x<sup>2</sup>",
+        "explanation": "In HTML, the <sup> element is used to indicate superscript text, typically rendered with a smaller font size and positioned above the baseline of the surrounding text by browsers. Superscript text is commonly used to represent mathematical expressions, exponents, footnotes, or annotations. By enclosing text within the <sup> tag, you indicate to both browsers and assistive technologies that the content should be displayed as superscript within the context of the document."
+    },
+    {
+        "language": "HTML",
+        "question": "How to define an abbreviation or acronym in HTML?",
+        "code": "<abbr title=\"World Health Organization\">WHO</abbr>",
+        "explanation": "In HTML, the <abbr> element is used to define an abbreviation or acronym, providing a full explanation or expansion of the abbreviated term via the title attribute. When users hover over the abbreviation, the title attribute displays the full text, aiding in understanding. It's recommended to use <abbr> for abbreviations or acronyms that may not be immediately familiar to all readers, enhancing accessibility and comprehension."
+    },
+    {
+        "language": "HTML",
+        "question": "How to define contact information in HTML?",
+        "code": "<address>\n  John Doe<br>\n  123 Main Street<br>\n  Anytown, USA\n</address>",
+        "explanation": "In HTML, the <address> element is used to define contact information for the author or owner of a document, such as name, address, email, or phone number. While traditionally used to indicate contact details, its semantic meaning has evolved to include any relevant contact or location information. By enclosing contact details within the <address> tag, you provide context and accessibility to users seeking contact information."
+    },
+    {
+        "language": "HTML",
+        "question": "How to define text direction in HTML?",
+        "code": "<bdo dir=\"rtl\">مرحبا بالعالم</bdo>",
+        "explanation": "In HTML, the <bdo> element is used to override the text directionality of its content, allowing you to display text in a different direction, such as right-to-left (RTL) or left-to-right (LTR). The dir attribute specifies the desired text directionality. By using <bdo> with the dir attribute, you ensure proper rendering of text in languages that require different directionalities, such as Arabic, Hebrew, or Persian."
+    },
+    {
+        "language": "HTML",
+        "question": "How to define a block quotation in HTML?",
+        "code": "<blockquote>\n  <p>This is a block quotation that spans multiple lines. It is typically indented and may include multiple paragraphs.</p>\n</blockquote>",
+        "explanation": "In HTML, the <blockquote> element is used to define a block quotation, representing content quoted from another source or reference. Block quotations are typically styled with indentation and may contain multiple paragraphs. By using <blockquote>, you indicate to both browsers and assistive technologies that the enclosed content is a quotation, providing semantic meaning and visual distinction."
+    },
+    {
+        "language": "HTML",
+        "question": "How to define the title of a work in HTML?",
+        "code": "<cite>The Great Gatsby</cite>",
+        "explanation": "In HTML, the <cite> element is used to define the title of a creative work, such as a book, movie, song, or article. The <cite> tag is often used to reference titles in citations, bibliographies, or references. By using <cite>, you provide semantic meaning to the title of the work, aiding in proper interpretation and accessibility for users."
+    },
+    {
+        "language": "HTML",
+        "question": "How to define a short inline quotation in HTML?",
+        "code": "<p>The famous saying <q>Knowledge is power</q> is often attributed to Sir Francis Bacon.</p>",
+        "explanation": "In HTML, the <q> element is used to define a short inline quotation, representing content quoted from another source or reference within the flow of text. The <q> tag typically renders enclosed text with quotation marks, providing visual indication of the quotation. By using <q>, you provide semantic meaning to the quoted text, aiding in proper interpretation and accessibility for users."
+    },
+    {
+        "language": "HTML",
+        "question": "How to create an HTML comment?",
+        "code": "<!-- This is an HTML comment -->",
+        "explanation": "In HTML, the <!-- --> syntax is used to create comments. Comments in HTML are not displayed on the webpage but are included in the code to provide explanations, notes, or reminders for developers. Comments can be used to annotate the code, describe its purpose, or temporarily disable certain sections. They are useful for improving code readability and collaboration among developers."
+    },
+    {
+        "language": "HTML",
+        "question": "How to add a favicon to a website?",
+        "code": "<link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">",
+        "explanation": "In HTML, the <link> element with the rel attribute set to 'icon' is used to add a favicon (short for 'favorite icon') to a website. The href attribute specifies the path to the favicon file, which is typically in .ico format. Favicon is a small icon displayed in the browser tab or next to the page title in bookmarks, providing visual identification for the website. Including a favicon enhances branding and recognition of the website among users."
+    },
+    {
+        "language": "HTML",
+        "question": "How to set the page title in HTML?",
+        "code": "<title>Page Title</title>",
+        "explanation": "In HTML, the <title> element is used to define the title of the web page. The text inside the <title> tags appears in the browser's title bar or tab and provides a brief description of the page's content. The page title is essential for search engine optimization (SEO) and helps users identify the content of the webpage when multiple tabs are open."
+    },
+    {
+        "language": "HTML",
+        "question": "How to create an unordered list in HTML?",
+        "code": "<ul>\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n</ul>",
+        "explanation": "In HTML, the <ul> element is used to create an unordered list, which represents a list of items without any particular order. Each item in the list is defined by the <li> (list item) element. Unordered lists are commonly used for navigation menus, bullet-point lists, or any list where the order of items is not important."
+    },
+    {
+        "language": "HTML",
+        "question": "How to create an ordered list in HTML?",
+        "code": "<ol>\n  <li>First item</li>\n  <li>Second item</li>\n  <li>Third item</li>\n</ol>",
+        "explanation": "In HTML, the <ol> element is used to create an ordered list, which represents a list of items in a specific sequence or order. Each item in the list is defined by the <li> (list item) element. Ordered lists are commonly used for numbered lists, step-by-step instructions, or any list where the order of items is important."
+    },
+    {
+        "language": "HTML",
+        "question": "How to create a table in HTML?",
+        "code": "<table>\n  <tr>\n    <th>Header 1</th>\n    <th>Header 2</th>\n  </tr>\n  <tr>\n    <td>Row 1, Cell 1</td>\n    <td>Row 1, Cell 2</td>\n  </tr>\n  <tr>\n    <td>Row 2, Cell 1</td>\n    <td>Row 2, Cell 2</td>\n  </tr>\n</table>",
+        "explanation": "In HTML, the <table> element is used to create a table, which organizes data into rows and columns. Tables are constructed using a combination of <tr> (table row), <th> (table header), and <td> (table data) elements. The <tr> element defines a row, while <th> and <td> elements define headers and data cells, respectively. Tables are commonly used to display structured data, such as schedules, pricing, or comparison charts."
+    },
+    {
+        "language": "HTML",
+        "question": "How to add an iframe to an HTML page?",
+        "code": "<iframe src=\"https://www.example.com\" width=\"600\" height=\"400\" frameborder=\"0\" allowfullscreen></iframe>",
+        "explanation": "In HTML, the <iframe> element is used to embed another HTML page or document within the current document. The src attribute specifies the URL of the content to be embedded. The width and height attributes define the dimensions of the iframe. The frameborder attribute controls whether a border is displayed around the iframe, with a value of '0' indicating no border. The allowfullscreen attribute enables the iframe to enter fullscreen mode if supported by the embedded content."
+    },
+    {
+        "language": "HTML",
+        "question": "Absolute file path in HTML",
+        "code": "<a href=\"/path/to/file.html\">Link to File</a>",
+        "explanation": "An absolute file path in HTML refers to the full path of a file on the server. It starts with a forward slash (/) and includes the entire directory structure leading to the file."
+    },
+    {
+        "language": "HTML",
+        "question": "Relative file path in HTML (Same Directory)",
+        "code": "<a href=\"file.html\">Link to File</a>",
+        "explanation": "A relative file path in HTML refers to the path of a file relative to the current directory. When the file to link to is in the same directory as the HTML file, you only need to specify the filename."
+    },
+    {
+        "language": "HTML",
+        "question": "Relative file path in HTML (Subdirectory)",
+        "code": "<a href=\"subdirectory/file.html\">Link to File</a>",
+        "explanation": "A relative file path in HTML refers to the path of a file relative to the current directory. When the file to link to is in a subdirectory, you need to specify the subdirectory followed by the filename."
+    },
+    {
+        "language": "HTML",
+        "question": "Relative file path in HTML (Parent Directory)",
+        "code": "<a href=\"../parentdirectory/file.html\">Link to File</a>",
+        "explanation": "A relative file path in HTML refers to the path of a file relative to the current directory. When the file to link to is in a parent directory, you need to use two dots (..) to move up one directory level, followed by the parent directory name and the filename."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <article> in HTML?",
+        "code": "<article>\n  <!-- Article content goes here -->\n</article>",
+        "explanation": "<article> defines independent, self-contained content within a document. It can represent a forum post, a blog entry, a news article, or any other piece of content that can stand alone."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <aside> in HTML?",
+        "code": "<aside>\n  <!-- Aside content goes here -->\n</aside>",
+        "explanation": "<aside> defines content that is tangentially related to the content around it, such as sidebars, pull quotes, or advertisements. It should be considered separate from the main content."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <details> in HTML?",
+        "code": "<details>\n  <summary>Details</summary>\n  <!-- Additional details go here -->\n</details>",
+        "explanation": "<details> defines additional details that the user can view or hide. It should contain a <summary> element to provide a visible heading for the details."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <figcaption> in HTML?",
+        "code": "<figure>\n  <!-- Figure content goes here -->\n  <figcaption>Caption</figcaption>\n</figure>",
+        "explanation": "<figcaption> defines a caption for a <figure> element, which typically contains illustrations, diagrams, photos, code listings, etc. It provides a description or explanation for the content within the <figure>."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <figure> in HTML?",
+        "code": "<figure>\n  <!-- Figure content goes here -->\n  <figcaption>Caption</figcaption>\n</figure>",
+        "explanation": "<figure> specifies self-contained content within a document, such as illustrations, diagrams, photos, code listings, etc. It can be used to group related content together."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <footer> in HTML?",
+        "code": "<footer>\n  <!-- Footer content goes here -->\n</footer>",
+        "explanation": "<footer> defines a footer for a document or section. It typically contains metadata, copyright information, author details, contact information, or links to related documents."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <header> in HTML?",
+        "code": "<header>\n  <!-- Header content goes here -->\n</header>",
+        "explanation": "<header> specifies a header for a document or section. It typically contains headings, logos, navigation links, search forms, or other introductory content at the top of the page."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <main> in HTML?",
+        "code": "<main>\n  <!-- Main content goes here -->\n</main>",
+        "explanation": "<main> specifies the main content of a document. It represents the primary content of the document, excluding any header, footer, or sidebar content."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <mark> in HTML?",
+        "code": "<p>This is <mark>highlighted</mark> text.</p>",
+        "explanation": "<mark> defines marked or highlighted text within a document. It is typically used to highlight or emphasize specific words or phrases for visual emphasis."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <nav> in HTML?",
+        "code": "<nav>\n  <!-- Navigation links go here -->\n</nav>",
+        "explanation": "<nav> defines a section containing navigation links. It is used to mark up navigation menus, site maps, table of contents, or any other grouping of links intended for navigation."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <section> in HTML?",
+        "code": "<section>\n  <!-- Section content goes here -->\n</section>",
+        "explanation": "<section> defines a section within a document. It is used to group related content together, such as chapters, headers, footers, or any other thematic grouping of content."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <summary> in HTML?",
+        "code": "<details>\n  <summary>Summary</summary>\n  <!-- Details content goes here -->\n</details>",
+        "explanation": "<summary> defines a visible heading for a <details> element, which represents additional details that the user can view or hide. It provides a label or title for the details."
+    },
+    {
+        "language": "HTML",
+        "question": "How to use <time> in HTML?",
+        "code": "<time datetime=\"2022-04-01\">April 1, 2022</time>",
+        "explanation": "<time> defines a specific time or a range of time within a document. It can be used to represent dates, times, durations, or any other time-related information."
+    }
+]

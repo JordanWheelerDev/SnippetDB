@@ -1,0 +1,422 @@
+[
+    {
+        "language": "JavaScript",
+        "question": "How to loop through an array in JavaScript?",
+        "code": "const array = [1, 2, 3, 4, 5];\nfor (let i = 0; i < array.length; i++) {\n    console.log(array[i]);\n}",
+        "explanation": "This code demonstrates how to loop through each element of an array using a for loop.\nIt iterates through the array from index 0 to the last index, logging each element to the console."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to loop through an object in JavaScript?",
+        "code": "const object = {\n    name: 'John',\n    age: 30\n};\nfor (let key in object) {\n    console.log(object[key]);\n}",
+        "explanation": "This code demonstrates how to loop through each property of an object using a for loop.\nIt iterates through each property of the object, logging each property to the console."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to loop through a string in JavaScript?",
+        "code": "const string = 'Hello World!';\nfor (let i = 0; i < string.length; i++) {\n    console.log(string[i]);\n}",
+        "explanation": "This code demonstrates how to loop through each character of a string using a for loop.\nIt iterates through each character of the string, logging each character to the console."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to create variables in JavaScript?",
+        "code": "var x = 5;\nlet y = 'Hello';\nconst z = true;",
+        "explanation": "In JavaScript, you can create variables using the 'var', 'let', or 'const' keywords.\n\n- 'var' is the old way of declaring variables. It has function-level scope.\n- 'let' was introduced in ES6 and has block-level scope. It's preferred over 'var' for most use cases.\n- 'const' is used to declare constants. Once assigned, the value of a constant cannot be changed.\n\nIn the example above:\n- 'x' is declared using 'var'.\n- 'y' is declared using 'let'.\n- 'z' is declared using 'const'."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use assignment operators in JavaScript?",
+        "code": "let x = 10;\nlet y = 5;\nx += y; // Equivalent to: x = x + y;\n// Now, x becomes 15",
+        "explanation": "In JavaScript, assignment operators are used to assign values to variables and perform operations on variables at the same time.\n\n- The '+=' operator adds the value of the right operand to the value of the left operand and assigns the result to the left operand. For example, 'x += y;' is equivalent to 'x = x + y;'.\n- Similarly, '-=', '*=', '/=', and '%=' operators perform subtraction, multiplication, division, and modulus operations combined with assignment, respectively."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use comparison operators in JavaScript?",
+        "code": "let x = 10;\nlet y = 5;\nlet result1 = x > y; // true\nlet result2 = x === y; // false",
+        "explanation": "In JavaScript, comparison operators are used to compare two values and return a Boolean result (true or false).\n\n- The '==' operator checks for equality between two values. It performs type coercion, meaning it tries to convert operands to the same type before making the comparison.\n- The '===' operator checks for strict equality between two values. It does not perform type coercion, so the values must be of the same type to be considered equal.\n- Other comparison operators include '!=', '!==', '>', '<', '>=', and '<='."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use arithmetic operators in JavaScript?",
+        "code": "let x = 10;\nlet y = 5;\nlet sum = x + y; // 15\nlet difference = x - y; // 5\nlet product = x * y; // 50\nlet quotient = x / y; // 2\nlet remainder = x % y; // 0",
+        "explanation": "In JavaScript, arithmetic operators are used to perform mathematical operations on numbers.\n\n- The '+' operator performs addition.\n- The '-' operator performs subtraction.\n- The '*' operator performs multiplication.\n- The '/' operator performs division.\n- The '%' operator calculates the remainder of division."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use string operators in JavaScript?",
+        "code": "let firstName = 'John';\nlet lastName = 'Doe';\nlet fullName = firstName + ' ' + lastName; // 'John Doe'\nlet greeting = 'Hello, ' + firstName + '!'; // 'Hello, John!'",
+        "explanation": "In JavaScript, string operators are used to manipulate strings.\n\n- The '+' operator is used to concatenate (join) strings together.\n- When the '+' operator is used with at least one string operand, it performs string concatenation. If both operands are strings, they are concatenated together.\n- If one operand is a string and the other is not, the non-string operand is converted to a string before concatenation."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use logical operators in JavaScript?",
+        "code": "let x = 5;\nlet y = 10;\nlet result = (x > 0) && (y < 20); // true",
+        "explanation": "In JavaScript, logical operators are used to combine multiple conditions and return a Boolean result.\n\n- The '&&' operator (logical AND) returns true if both operands are true; otherwise, it returns false.\n- The '||' operator (logical OR) returns true if at least one of the operands is true; otherwise, it returns false.\n- The '!' operator (logical NOT) returns the inverse of the operand's Boolean value."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use bitwise operators in JavaScript?",
+        "code": "let x = 5;\nlet y = 3;\nlet result = x & y; // 1",
+        "explanation": "In JavaScript, bitwise operators are used to perform bitwise operations on binary representations of numbers.\n\n- The '&' operator (bitwise AND) performs a bitwise AND operation on each pair of corresponding bits.\n- The '|' operator (bitwise OR) performs a bitwise OR operation on each pair of corresponding bits.\n- The '^' operator (bitwise XOR) performs a bitwise XOR (exclusive OR) operation on each pair of corresponding bits.\n- The '~' operator (bitwise NOT) inverts all the bits of its operand."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use unary operators in JavaScript?",
+        "code": "let x = 5;\nx++; // 6\nlet y = -10;\nlet z = typeof x; // 'number'",
+        "explanation": "In JavaScript, unary operators are used to perform operations on a single operand.\n\n- The '++' operator (increment) increases the value of its operand by 1.\n- The '--' operator (decrement) decreases the value of its operand by 1.\n- The '+' operator (unary plus) attempts to convert its operand into a number.\n- The '-' operator (unary minus) negates its operand and converts it into a number.\n- The 'typeof' operator returns a string indicating the type of its operand."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use the ternary operator in JavaScript?",
+        "code": "let x = 10;\nlet result = (x > 5) ? 'Greater than 5' : 'Less than or equal to 5'; // 'Greater than 5'",
+        "explanation": "In JavaScript, the ternary operator (also known as the conditional operator) is used to evaluate a condition and return one of two values depending on whether the condition is true or false.\n\nThe syntax of the ternary operator is: 'condition ? value1 : value2'.\n\nIf the condition is true, 'value1' is returned; otherwise, 'value2' is returned."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to perform type-related operations in JavaScript?",
+        "code": "",
+        "explanation": "In JavaScript, type-related operations involve checking and manipulating data types.\n\n- The 'typeof' operator returns a string indicating the type of its operand.\n- The 'instanceof' operator checks whether an object belongs to a specific class or constructor function.\n- Type conversion functions such as 'parseInt()', 'parseFloat()', 'String()', 'Number()', 'Boolean()', and 'Array.from()' are used to convert values from one type to another.\n- The 'isNaN()' function checks whether a value is NaN (Not a Number).\n- The 'isFinite()' function checks whether a value is a finite number.\n- The 'typeof' and 'instanceof' operators can be used in conditional statements and expressions to perform type-based branching."
+    },
+    {
+        "language": "JavaScript",
+        "question": "What is a string in JavaScript?",
+        "code": "let myString = 'Hello, world!';",
+        "explanation": "In JavaScript, a string is a data type used to represent textual data. It is a sequence of characters enclosed within single quotes ('') or double quotes (\"\").\n\nStrings can contain letters, digits, symbols, whitespace, and special characters. They can also be empty (zero characters).\n\nStrings in JavaScript are immutable, meaning that once a string is created, its value cannot be changed. However, you can create new strings based on existing ones using string manipulation methods.\n\nStrings are widely used in JavaScript for various purposes, such as storing and manipulating text-based data, displaying messages to users, and interacting with web APIs and user interfaces."
+    },
+    {
+        "language": "JavaScript",
+        "question": "What is the Number data type used for in JavaScript?",
+        "code": "let myNumber = 42;",
+        "explanation": "In JavaScript, the Number data type represents numeric values, including integers and floating-point numbers (decimals)."
+    },
+    {
+        "language": "JavaScript",
+        "question": "When would you use the BigInt data type in JavaScript?",
+        "code": "let bigInteger = 9007199254740991n;",
+        "explanation": "BigInt is a built-in object that provides a way to represent whole numbers larger than the maximum safe integer represented by the Number data type."
+    },
+    {
+        "language": "JavaScript",
+        "question": "What does the Boolean data type represent in JavaScript?",
+        "code": "let isTrue = true;",
+        "explanation": "The Boolean data type represents a logical value, either true or false."
+    },
+    {
+        "language": "JavaScript",
+        "question": "What does it mean when a variable is declared but not assigned a value in JavaScript?",
+        "code": "let undefinedVariable;",
+        "explanation": "Undefined is a primitive value that is automatically assigned to variables that have been declared but have not been assigned a value yet."
+    },
+    {
+        "language": "JavaScript",
+        "question": "What is the purpose of the Symbol data type in JavaScript?",
+        "code": "const mySymbol = Symbol('description');",
+        "explanation": "Symbol is a primitive data type used to create unique identifiers for object properties."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How are objects represented in JavaScript?",
+        "code": "let myObject = { key1: 'value1', key2: 42 };",
+        "explanation": "Objects are complex data types that represent a collection of key-value pairs, where keys are strings and values can be of any data type."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to create a JavaScript function?",
+        "code": "function myFunction(parameter1, parameter2) {\n    // Function body: code to be executed\n    // You can use the parameters passed to the function\n    // Optionally, return a value using the return statement\n}",
+        "explanation": "In JavaScript, you can create a function using the `function` keyword followed by the function name and a pair of parentheses. Inside the parentheses, you can optionally specify parameters that the function accepts. These parameters act as placeholders for values that can be passed to the function when it is called.\n\nAfter the parentheses, you use curly braces `{}` to define the function body. This is where you write the code that the function will execute when called. You can use the parameters passed to the function within the function body.\n\nOptionally, you can use the `return` statement to specify the value that the function should return. If omitted, the function returns `undefined` by default.\n\nHere's an example of a simple JavaScript function named `myFunction` that takes two parameters and returns the sum of them."
+    },
+    {
+        "language": "JavaScript",
+        "question": "What are JavaScript events?",
+        "code": "document.getElementById('myButton').addEventListener('click', function() {\n    // Code to execute when the button is clicked\n    alert('Button clicked!');\n});",
+        "explanation": "In JavaScript, events are actions or occurrences that happen in the browser or the document, such as a user clicking a button, hovering over an element, typing into a form field, or the page finishing loading. JavaScript allows you to respond to these events by executing code, which can change the behavior or appearance of the webpage in response to user actions or other triggers.\n\nEvents are typically attached to HTML elements using event listeners. An event listener is a function that waits for a specific event to occur, and then executes some code in response. You can add event listeners to HTML elements using JavaScript to define how the webpage should respond when certain events occur.\n\nCommon JavaScript events include click, mouseover, mouseout, keydown, keyup, submit, load, and many others. By handling events effectively, you can create interactive and dynamic web applications that respond to user interactions."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to get the length of a string in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet length = str.length;",
+        "explanation": "In JavaScript, the `length` property of a string object returns the number of characters in the string. This property is accessed using dot notation after the string variable."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to get a character at a specific index in a string in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet char = str.charAt(7);",
+        "explanation": "In JavaScript, the `charAt()` method of a string object returns the character at the specified index position. Indexing starts at 0, so the character at index 7 is the 8th character in the string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to get the Unicode value of a character in a string in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet unicode = str.charCodeAt(7);",
+        "explanation": "In JavaScript, the `charCodeAt()` method of a string object returns the Unicode value of the character at the specified index position. Unicode values are integer representations of characters in the Unicode character set."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to get a character at a specific index in a string using the at() method in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet char = str.at(7);",
+        "explanation": "The `at()` method is a newer method introduced in ECMAScript 2021 (ES12). It returns the character at the specified index position in the string. The indexing starts at 0."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to get a character at a specific index in a string using square brackets notation in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet char = str[7];",
+        "explanation": "In JavaScript, you can use square brackets notation to access characters at specific index positions in a string. This method is similar to using the `charAt()` method but provides a more concise syntax."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to extract a portion of a string in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet sliced = str.slice(7, 12);",
+        "explanation": "In JavaScript, the `slice()` method of a string object extracts a section of the string and returns it as a new string, without modifying the original string. It takes two parameters: the starting index (inclusive) and the ending index (exclusive) of the section to be extracted."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to extract a portion of a string in JavaScript using the substring() method?",
+        "code": "let str = 'Hello, World!';\nlet sub = str.substring(7, 12);",
+        "explanation": "The `substring()` method is similar to the `slice()` method and is used to extract a portion of a string. It also takes two parameters: the starting index (inclusive) and the ending index (exclusive) of the substring to be extracted. If the second parameter is omitted, the substring extends to the end of the string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to extract a portion of a string in JavaScript using the substr() method?",
+        "code": "let str = 'Hello, World!';\nlet sub = str.substr(7, 5);",
+        "explanation": "The `substr()` method is used to extract a specified number of characters from a string, starting at a specified index. It takes two parameters: the starting index (inclusive) and the number of characters to extract. If the second parameter is omitted, the substring extends to the end of the string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to convert a string to uppercase in JavaScript?",
+        "code": "let str = 'hello, world!';\nlet upper = str.toUpperCase();",
+        "explanation": "In JavaScript, the `toUpperCase()` method of a string object converts all the characters in the string to uppercase letters and returns the resulting string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to convert a string to lowercase in JavaScript?",
+        "code": "let str = 'HELLO, WORLD!';\nlet lower = str.toLowerCase();",
+        "explanation": "The `toLowerCase()` method of a string object converts all the characters in the string to lowercase letters and returns the resulting string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to remove whitespace from both ends of a string in JavaScript?",
+        "code": "let str = '   Hello, World!   ';\nlet trimmed = str.trim();",
+        "explanation": "In JavaScript, the `trim()` method of a string object removes whitespace from both ends of the string and returns the trimmed string. Whitespace includes spaces, tabs, and newline characters."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to concatenate two or more strings in JavaScript?",
+        "code": "let str1 = 'Hello';\nlet str2 = 'World';\nlet concat = str1.concat(' ', str2);",
+        "explanation": "The `concat()` method of a string object is used to concatenate two or more strings together and returns the resulting concatenated string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to remove leading whitespace from a string in JavaScript?",
+        "code": "let str = '   Hello, World!';\nlet trimmed = str.trimStart();",
+        "explanation": "The `trimStart()` method is a newer method introduced in ECMAScript 2021 (ES12). It removes leading whitespace (spaces, tabs, and newline characters) from the beginning of a string and returns the trimmed string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to remove trailing whitespace from a string in JavaScript?",
+        "code": "let str = 'Hello, World!   ';\nlet trimmed = str.trimEnd();",
+        "explanation": "The `trimEnd()` method is a newer method introduced in ECMAScript 2021 (ES12). It removes trailing whitespace (spaces, tabs, and newline characters) from the end of a string and returns the trimmed string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to pad the start of a string with another string until it reaches a specified length in JavaScript?",
+        "code": "let str = '5';\nlet padded = str.padStart(4, '0');",
+        "explanation": "The `padStart()` method of a string object pads the start of the string with another string until the resulting string reaches the specified length. It takes two parameters: the target length and the string to pad with."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to pad the start of a string with another string until it reaches a specified length in JavaScript?",
+        "code": "let str = '5';\nlet padded = str.padStart(4, '0');",
+        "explanation": "The `padStart()` method of a string object pads the start of the string with another string until the resulting string reaches the specified length. It takes two parameters: the target length and the string to pad with."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to repeat a string a specified number of times in JavaScript?",
+        "code": "let str = 'Hello';\nlet repeated = str.repeat(3);",
+        "explanation": "The `repeat()` method of a string object repeats the string a specified number of times and returns the resulting string. It takes one parameter: the number of times to repeat the string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to replace occurrences of a substring within a string in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet replaced = str.replace('World', 'Universe');",
+        "explanation": "The `replace()` method of a string object replaces occurrences of a specified substring with another substring in the string and returns the resulting string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to replace all occurrences of a substring within a string in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet replaced = str.replaceAll('o', 'x');",
+        "explanation": "The `replaceAll()` method is a newer method introduced in ECMAScript 2021 (ES12). It replaces all occurrences of a specified substring with another substring in the string and returns the resulting string."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to split a string into an array of substrings in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet parts = str.split(', ');",
+        "explanation": "The `split()` method of a string object splits the string into an array of substrings based on a specified separator and returns the resulting array."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to find the index of a substring within a string in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet index = str.indexOf('World');",
+        "explanation": "The `indexOf()` method of a string object returns the index within the string of the first occurrence of a specified substring. If the substring is not found, it returns -1."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to find the index of a substring within a string in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet index = str.indexOf('World');",
+        "explanation": "The `indexOf()` method of a string object returns the index within the string of the first occurrence of a specified substring. If the substring is not found, it returns -1."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to find the last index of a substring within a string in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet index = str.lastIndexOf('l');",
+        "explanation": "The `lastIndexOf()` method of a string object returns the index within the string of the last occurrence of a specified substring. If the substring is not found, it returns -1."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to search for a substring within a string using a regular expression in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet index = str.search(/world/i);",
+        "explanation": "The `search()` method of a string object searches for a substring within the string using a regular expression pattern and returns the index of the first occurrence of the substring. If the substring is not found, it returns -1."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to match a string against a regular expression pattern in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet matches = str.match(/o/g);",
+        "explanation": "The `match()` method of a string object retrieves the matches when matching a string against a regular expression pattern and returns an array containing the matches. If no matches are found, it returns null."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to retrieve all matches of a string against a regular expression pattern in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet matches = [...str.matchAll(/o/g)];",
+        "explanation": "The `matchAll()` method is a newer method introduced in ECMAScript 2020 (ES11). It returns an iterator containing all matches of a string against a regular expression pattern, including capturing groups."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to check if a string contains a specific substring in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet contains = str.includes('World');",
+        "explanation": "The `includes()` method of a string object determines whether the string contains a specified substring and returns true or false accordingly."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to check if a string starts with a specific substring in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet startsWith = str.startsWith('Hello');",
+        "explanation": "The `startsWith()` method of a string object determines whether the string starts with a specified substring and returns true or false accordingly."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to check if a string ends with a specific substring in JavaScript?",
+        "code": "let str = 'Hello, World!';\nlet endsWith = str.endsWith('World!');",
+        "explanation": "The `endsWith()` method of a string object determines whether the string ends with a specified substring and returns true or false accordingly."
+    },
+    {
+        "language": "JavaScript",
+        "question": "What is an array in JavaScript?",
+        "code": "const myArray = [1, 'two', true, { name: 'John' }];",
+        "explanation": "An array in JavaScript is a data structure used to store multiple values in a single variable. Arrays can contain elements of different data types, including numbers, strings, booleans, objects, and even other arrays. Each element in an array is indexed starting from 0, and you can access and manipulate array elements using their indices."
+    },
+    {
+        "language": "JavaScript",
+        "question": "What are common array methods in JavaScript?",
+        "code": "const myArray = [1, 2, 3, 4, 5];\nconst length = myArray.length;\nconst firstElement = myArray[0];\nmyArray.push(6);\nmyArray.pop();\nmyArray.unshift(0);\nmyArray.shift();",
+        "explanation": "Common array methods in JavaScript include: length, accessing elements by index, push (add an element to the end), pop (remove the last element), unshift (add an element to the beginning), and shift (remove the first element)."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to search for an element in an array in JavaScript?",
+        "code": "const myArray = [1, 2, 3, 4, 5];\nconst index = myArray.indexOf(3);",
+        "explanation": "The indexOf() method of an array object returns the index of the first occurrence of a specified element within the array. If the element is not found, it returns -1."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to iterate over elements in an array in JavaScript?",
+        "code": "const myArray = [1, 2, 3, 4, 5];\nmyArray.forEach((element) => {\n    console.log(element);\n});",
+        "explanation": "The forEach() method of an array object executes a provided function once for each array element, allowing you to iterate over and perform operations on each element."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to sort elements in an array in JavaScript?",
+        "code": "const myArray = [3, 1, 4, 2, 5];\nmyArray.sort();",
+        "explanation": "The sort() method of an array object sorts the elements of an array in place and returns the sorted array. By default, it sorts elements as strings based on Unicode code points."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to work with dates in JavaScript?",
+        "code": "const currentDate = new Date();\nconst year = currentDate.getFullYear();\nconst month = currentDate.getMonth();\nconst day = currentDate.getDate();",
+        "explanation": "In JavaScript, you can work with dates using the Date object. You can create a new Date object to represent the current date and time, and then extract components such as year, month, and day using various methods."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to format dates in JavaScript?",
+        "code": "const currentDate = new Date();\nconst formattedDate = currentDate.toLocaleDateString();",
+        "explanation": "You can format dates in JavaScript using the toLocaleDateString() method of the Date object, which returns a string representing the date portion of the date object in a localized format."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use if-else statements in JavaScript?",
+        "code": "const x = 10;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is not greater than 5');\n}",
+        "explanation": "In JavaScript, you can use if-else statements to conditionally execute code based on the evaluation of a condition. If the condition is true, the code inside the if block is executed; otherwise, the code inside the else block (if present) is executed."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use switch statements in JavaScript?",
+        "code": "const day = 3;\nswitch (day) {\n    case 1:\n        console.log('Monday');\n        break;\n    case 2:\n        console.log('Tuesday');\n        break;\n    default:\n        console.log('Other day');\n}",
+        "explanation": "Switch statements in JavaScript allow you to select one of many code blocks to be executed based on the value of an expression. The switch expression is evaluated once, and the value of the expression is compared with the values of each case. If a match is found, the corresponding code block is executed."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use a for loop in JavaScript?",
+        "code": "for (let i = 0; i < 5; i++) {\n    console.log(i);\n}",
+        "explanation": "The for loop in JavaScript is used to execute a block of code multiple times. It consists of three parts: initialization (let i = 0), condition (i < 5), and iteration (i++), which are separated by semicolons. The code block inside the loop is executed until the condition becomes false."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use a for...in loop in JavaScript?",
+        "code": "const obj = { a: 1, b: 2, c: 3 };\nfor (let key in obj) {\n    console.log(key + ': ' + obj[key]);\n}",
+        "explanation": "The for...in loop in JavaScript is used to iterate over the properties of an object. It iterates over the enumerable properties of an object, including properties inherited from prototype chain. Inside the loop, you can access the key and corresponding value of each property."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use a for...of loop in JavaScript?",
+        "code": "const arr = ['a', 'b', 'c'];\nfor (let value of arr) {\n    console.log(value);\n}",
+        "explanation": "The for...of loop in JavaScript is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects. It simplifies iteration by directly providing the values, rather than indices or keys, of the iterable object."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use a while loop in JavaScript?",
+        "code": "let i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}",
+        "explanation": "The while loop in JavaScript is used to execute a block of code repeatedly as long as a specified condition is true. It evaluates the condition before each iteration, and if the condition is true, it executes the code block. The loop continues until the condition becomes false."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use Sets in JavaScript?",
+        "code": "const mySet = new Set();\nmySet.add(1);\nmySet.add(2);\nmySet.add(3);",
+        "explanation": "Sets are collections of unique values in JavaScript. You can create a new Set using the Set constructor and add elements to it using the add() method. Sets automatically remove duplicate values, so each value in a Set must be unique."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use Maps in JavaScript?",
+        "code": "const myMap = new Map();\nmyMap.set('a', 1);\nmyMap.set('b', 2);\nmyMap.set('c', 3);",
+        "explanation": "Maps are collections of key-value pairs in JavaScript. You can create a new Map using the Map constructor and add key-value pairs to it using the set() method. Keys in a Map can be of any data type, and each key can only appear once in the Map."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use Regular Expressions (RegExp) in JavaScript?",
+        "code": "const regex = /pattern/;",
+        "explanation": "Regular expressions, also known as RegExp, are patterns used to match character combinations in strings. In JavaScript, regular expressions are defined using a pair of forward slashes enclosing the pattern to be matched. Regular expressions can be used with methods like test(), exec(), match(), search(), replace(), and split() to perform various string manipulation tasks."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use the 'this' keyword in JavaScript?",
+        "code": "const obj = {\n  name: 'John',\n  greet: function() {\n    return `Hello, ${this.name}!`;\n  }\n};\nconsole.log(obj.greet());",
+        "explanation": "The 'this' keyword in JavaScript refers to the current execution context or the object that the function is a method of. In the provided example, 'this' inside the 'greet' method of the 'obj' object refers to the 'obj' itself. So, when 'greet' is called, it accesses the 'name' property of 'obj' using 'this' and returns a greeting message."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use arrow functions in JavaScript?",
+        "code": "const arrowFunction = () => console.log('Hello, world!');\narrowFunction();",
+        "explanation": "Arrow functions in JavaScript provide a concise syntax for writing function expressions. They are often used for inline functions or callbacks. In the provided example, 'arrowFunction' is a function that logs 'Hello, world!' to the console when invoked. Arrow functions do not have their own 'this' value; instead, they inherit the 'this' value from the enclosing lexical context. This behavior can be useful in certain situations, such as when defining methods inside objects or working with event handlers."
+    },
+    {
+        "language": "JavaScript",
+        "question": "How to use async/await in JavaScript?",
+        "code": "async function fetchData() {\n  try {\n    const response = await fetch('https://api.example.com/data');\n    const data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error('Error fetching data:', error);\n  }\n}\n\nfetchData();",
+        "explanation": "Async/await simplifies asynchronous code by allowing you to write it in a more synchronous style. In this example, the 'fetchData' function fetches data from an API asynchronously using the 'fetch' API. The 'await' keyword is used to pause execution until the promise returned by 'fetch' resolves. Once the response is received, 'await' is used again to parse the JSON data. Any errors that occur during these operations are caught and logged using a 'try...catch' block."
+    }
+]
