@@ -16,5 +16,5 @@ We welcome contributions from the community to help expand and improve the snipp
 
 ## Get Started
 
-To get started with snippetDB, visit our [GitHub Pages](https://jordanwheelerdev.github.io/snippetdb) to explore the collection of code snippets in various programming languages and technologies. You can use the search functionality to quickly locate snippets based on keywords or topics of interest.
+To get started with snippetDB, visit our [GitHub Pages](https://jordanwheelerdev.github.io/SnippetDB/) to explore the collection of code snippets in various programming languages and technologies. You can use the search functionality to quickly locate snippets based on keywords or topics of interest.
 
