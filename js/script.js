@@ -72,4 +72,21 @@ document.addEventListener("DOMContentLoaded", () => {
     function escapeHTML(html) {
         return html.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     }
+
+    selectLang.addEventListener("change", function() {
+        const selectedLanguage = selectLang.value.toLowerCase();
+        switch (selectedLanguage) {
+          case "javascript":
+            searchInput.placeholder = "How to create a function in JavaScript?";
+            break;
+          case "html":
+            searchInput.placeholder = "How to represent subscript text in HTML?";
+            break;
+        case "python":
+            searchInput.placeholder = "What are dictionaries in Python?";
+            break;
+          default:
+            searchInput.placeholder = "Enter your search query";
+        }
+      });
 });

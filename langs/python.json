@@ -1,0 +1,260 @@
+[
+    {
+        "language": "Python",
+        "question": "What is good code structure in Python?",
+        "code": "def calculate_circle_area(radius):\n    \"\"\"Calculate the area of a circle.\"\"\"\n    pi = 3.14159\n    area = pi * radius ** 2\n    return area",
+        "explanation": "Good code structure in Python involves using consistent indentation, adhering to PEP 8 guidelines, organizing code into logical functions and classes, providing meaningful variable and function names, using comments to document code, and following the principles of modularity and reusability."
+    },
+    {
+        "language": "Python",
+        "question": "What is bad code structure in Python?",
+        "code": "def ac(r):\n# area calculation\np = 3.14159\na = p * r ** 2\nreturn a",
+        "explanation": "Bad code structure in Python includes inconsistent indentation, ignoring PEP 8 guidelines, writing overly complex or monolithic functions, using cryptic variable and function names, lack of documentation or excessive comments, and violating principles of modularity and reusability."
+    },
+    {
+        "language": "Python",
+        "question": "What is a Python comment and how is it used?",
+        "code": "# This is a comment in Python",
+        "explanation": "In Python, a comment is a line of text that is ignored by the Python interpreter. Comments are used to add explanatory notes or annotations to the code. They can be single-line comments, like the example provided, which start with the hash symbol (#) and continue until the end of the line. Comments can also be used to temporarily disable or \"comment out\" code during debugging or testing."
+    },
+    {
+        "language": "Python",
+        "question": "How are variables declared and assigned in Python?",
+        "code": "x = 5\ny = 'Hello, World!'\nz = 3.14",
+        "explanation": "In Python, variables are declared and assigned using the assignment operator (=). You can assign various types of data to variables, including integers, strings, floating-point numbers, and more. Variable names can consist of letters, numbers, and underscores, but cannot start with a number. In the provided example, 'x' is assigned the integer value 5, 'y' is assigned the string value 'Hello, World!', and 'z' is assigned the floating-point value 3.14."
+    },
+    {
+        "language": "Python",
+        "question": "How to assign values to multiple variables in Python?",
+        "code": "x, y, z = 5, 'Hello, World!', 3.14",
+        "explanation": "Python allows you to assign values to multiple variables in a single line by separating the variable names and values with commas. Each variable is assigned the corresponding value from the list of values on the right-hand side of the assignment operator (=). In the provided example, 'x' is assigned the value 5, 'y' is assigned the string 'Hello, World!', and 'z' is assigned the value 3.14."
+    },
+    {
+        "language": "Python",
+        "question": "How to create a string (text type) variable in Python?",
+        "code": "my_string = 'Hello, World!'",
+        "explanation": "In Python, you can create a string variable by enclosing the text within single quotes ('') or double quotes (\"). Strings are used to represent text data."
+    },
+    {
+        "language": "Python",
+        "question": "How to create numeric variables (int, float, complex) in Python?",
+        "code": "my_int = 10\nmy_float = 3.14\nmy_complex = 2 + 3j",
+        "explanation": "Python supports three numeric types: integers (int), floating-point numbers (float), and complex numbers (complex). Integers represent whole numbers, floats represent decimal numbers, and complex numbers represent numbers with both real and imaginary parts."
+    },
+    {
+        "language": "Python",
+        "question": "How to create sequence variables (list, tuple, range) in Python?",
+        "code": "my_list = [1, 2, 3]\nmy_tuple = (4, 5, 6)\nmy_range = range(1, 10, 2)",
+        "explanation": "Python provides several sequence types: lists, tuples, and ranges. Lists are mutable sequences of elements, tuples are immutable sequences, and ranges represent a sequence of numbers."
+    },
+    {
+        "language": "Python",
+        "question": "How to create a mapping variable (dict) in Python?",
+        "code": "my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}",
+        "explanation": "A dictionary (dict) in Python is an unordered collection of key-value pairs. Each key is associated with a value, and the key-value pairs are separated by colons (:). Dictionaries are used to store data in a structured format."
+    },
+    {
+        "language": "Python",
+        "question": "How to create set variables (set, frozenset) in Python?",
+        "code": "my_set = {1, 2, 3}\nmy_frozenset = frozenset({4, 5, 6})",
+        "explanation": "Python provides two set types: sets and frozensets. Sets are mutable collections of unique elements, and frozensets are immutable sets. Sets are useful for storing unique elements and performing set operations such as union, intersection, and difference."
+    },
+    {
+        "language": "Python",
+        "question": "How to create a boolean variable (bool) in Python?",
+        "code": "my_bool = True",
+        "explanation": "Boolean variables in Python represent truth values, either True or False. They are used to control the flow of program execution and to make logical decisions."
+    },
+    {
+        "language": "Python",
+        "question": "How to create binary variables (bytes, bytearray, memoryview) in Python?",
+        "code": "my_bytes = b'Hello'\nmy_bytearray = bytearray(b'World')\nmy_memoryview = memoryview(b'Python')",
+        "explanation": "Python supports binary data types for working with binary data, such as bytes, bytearray, and memoryview. Bytes and bytearray are used to represent sequences of bytes, while memoryview provides a view of the memory as a sequence of bytes."
+    },
+    {
+        "language": "Python",
+        "question": "How to create a boolean variable (bool) in Python?",
+        "code": "my_bool = True",
+        "explanation": "Boolean variables in Python represent truth values, either True or False. They are used to control the flow of program execution and to make logical decisions."
+    },
+    {
+        "language": "Python",
+        "question": "What are Python arithmetic operators?",
+        "code": "# Addition\nx = 5\ny = 3\nresult = x + y # Equals 8\n\n# Subtraction\nx = 5\ny = 3\nresult = x - y # Equals 2\n\n# Multiplication\nx = 5\ny = 3\nresult = x * y # Equals 15\n\n# Division\nx = 6\ny = 2\nresult = x / y # Equals 3.0\n\n# Modulus\nx = 10\ny = 3\nresult = x % y # Equals 1\n\n# Exponentiation\nx = 2\ny = 3\nresult = x ** y # Equals 8\n\n# Floor division\nx = 10\ny = 3\nresult = x // y # Equals 3",
+        "explanation": "Python provides several arithmetic operators to perform basic mathematical operations. These operators include addition (+), subtraction (-), multiplication (*), division (/), modulus (%), exponentiation (**), and floor division (//). Addition, subtraction, multiplication, and division operate as expected, while the modulus operator returns the remainder of division. Exponentiation raises the left operand to the power of the right operand. Floor division returns the quotient of the division, rounding down to the nearest integer."
+    },
+    {
+        "language": "Python",
+        "question": "What are Python assignment operators?",
+        "code": "# Assignment\nx = 5 # x is assigned the value 5\n\n# Addition assignment\nx += 3 # Equivalent to: x = x + 3\n\n# Subtraction assignment\nx -= 3 # Equivalent to: x = x - 3\n\n# Multiplication assignment\nx *= 3 # Equivalent to: x = x * 3\n\n# Division assignment\nx /= 3 # Equivalent to: x = x / 3\n\n# Modulus assignment\nx %= 3 # Equivalent to: x = x % 3\n\n# Exponentiation assignment\nx **= 3 # Equivalent to: x = x ** 3\n\n# Floor division assignment\nx //= 3 # Equivalent to: x = x // 3",
+        "explanation": "Python provides several assignment operators to assign values to variables and perform arithmetic operations in a concise manner. The assignment operator (=) is used to assign a value to a variable. Addition assignment (+=), subtraction assignment (-=), multiplication assignment (*=), division assignment (/=), modulus assignment (%=), exponentiation assignment (**=), and floor division assignment (//=) combine arithmetic operations with assignment. These operators modify the value of the variable by performing the specified operation."
+    },
+    {
+        "language": "Python",
+        "question": "What are Python comparison operators?",
+        "code": "# Equal\nx == y # Returns True if x is equal to y\n\n# Not Equal\nx != y # Returns True if x is not equal to y\n\n# Greater Than\nx > y # Returns True if x is greater than y\n\n# Less Than\nx < y # Returns True if x is less than y\n\n# Greater Than or Equal To\nx >= y # Returns True if x is greater than or equal to y\n\n# Less Than or Equal To\nx <= y # Returns True if x is less than or equal to y",
+        "explanation": "Python comparison operators are used to compare two values and return a Boolean result (True or False) based on the comparison. The equal operator (==) checks if two values are equal. The not equal operator (!=) checks if two values are not equal. The greater than operator (>) checks if the left operand is greater than the right operand. The less than operator (<) checks if the left operand is less than the right operand. The greater than or equal to operator (>=) checks if the left operand is greater than or equal to the right operand. The less than or equal to operator (<=) checks if the left operand is less than or equal to the right operand."
+    },
+    {
+        "language": "Python",
+        "question": "What are Python logical operators?",
+        "code": "# Logical AND\nx and y # Returns True if both x and y are true\n\n# Logical OR\nx or y # Returns True if either x or y is true\n\n# Logical NOT\nnot x # Returns True if x is false, and vice versa",
+        "explanation": "Python logical operators are used to combine multiple conditions and return a Boolean result. The logical AND operator (and) returns True if both the left and right operands are true. The logical OR operator (or) returns True if either the left or right operand (or both) are true. The logical NOT operator (not) returns True if the operand is false, and False if the operand is true."
+    },
+    {
+        "language": "Python",
+        "question": "What are Python identity operators?",
+        "code": "# Identity operators\nx = 5\ny = 5\n\n# is\nx is y # Returns True if both variables point to the same object\n\n# is not\nx is not y # Returns True if both variables do not point to the same object",
+        "explanation": "Python identity operators are used to compare the memory locations of two objects. The 'is' operator returns True if both variables point to the same object in memory, while the 'is not' operator returns True if both variables do not point to the same object."
+    },
+    {
+        "language": "Python",
+        "question": "What are Python membership operators?",
+        "code": "# Membership operators\nmy_list = [1, 2, 3, 4, 5]\n\n# in\nprint(3 in my_list) # Returns True if the specified value is present in the list\n\n# not in\nprint(6 not in my_list) # Returns True if the specified value is not present in the list",
+        "explanation": "Python membership operators are used to test whether a value or variable is found within a sequence (such as a list, tuple, or string). The 'in' operator returns True if the specified value is present in the sequence, while the 'not in' operator returns True if the specified value is not present in the sequence."
+    },
+    {
+        "language": "Python",
+        "question": "What are Python bitwise operators?",
+        "code": "# Bitwise operators\nx = 5 # 0000 0101\ny = 3 # 0000 0011\n\n# Bitwise AND\nprint(x & y) # Returns 1 (0000 0001)\n\n# Bitwise OR\nprint(x | y) # Returns 7 (0000 0111)\n\n# Bitwise XOR\nprint(x ^ y) # Returns 6 (0000 0110)\n\n# Bitwise NOT\nprint(~x) # Returns -6 (1111 1010)\n\n# Bitwise left shift\nprint(x << 1) # Returns 10 (0000 1010)\n\n# Bitwise right shift\nprint(x >> 1) # Returns 2 (0000 0010)",
+        "explanation": "Python bitwise operators perform operations on the binary representations of integers. The bitwise AND, OR, and XOR operators compare corresponding bits of two operands. The bitwise NOT operator inverts the bits of a single operand. The left shift operator shifts the bits of the first operand to the left by a specified number of positions, while the right shift operator shifts the bits to the right."
+    },
+    {
+        "language": "Python",
+        "question": "How to create a list in Python?",
+        "code": "# Creating a list\nmy_list = [1, 2, 3, 'hello', True]",
+        "explanation": "In Python, a list is a collection of items, separated by commas and enclosed within square brackets. Lists can contain elements of different data types, including integers, strings, booleans, and even other lists. The example code demonstrates how to create a list named 'my_list' containing integers, a string, and a boolean value."
+    },
+    {
+        "language": "Python",
+        "question": "How to access items in a list in Python?",
+        "code": "# Accessing list items\nmy_list = [1, 2, 3, 4, 5]\nfirst_item = my_list[0]\nthird_item = my_list[2]",
+        "explanation": "To access items in a list in Python, you can use square brackets [] with the index of the item you want to access. Remember that Python uses zero-based indexing, so the first item in the list has an index of 0. In the example code, we create a list named 'my_list' and then access the first and third items using their respective indices."
+    },
+    {
+        "language": "Python",
+        "question": "How to change items in a list in Python?",
+        "code": "# Changing list items\nmy_list = [1, 2, 3, 4, 5]\nmy_list[2] = 'changed'\nmy_list[4] = 10",
+        "explanation": "You can change the value of an item in a list by assigning a new value to the corresponding index. In the example code, we modify the third item in the list 'my_list' by assigning it a new value 'changed'. Similarly, we change the value of the fifth item to 10."
+    },
+    {
+        "language": "Python",
+        "question": "How to add items to a list in Python?",
+        "code": "# Adding list items\nmy_list = [1, 2, 3]\nmy_list.append(4)\nmy_list.insert(1, 5)",
+        "explanation": "To add items to a list in Python, you can use the 'append()' method to add an item to the end of the list or the 'insert()' method to add an item at a specific index. In the example code, we start with a list 'my_list' containing three items. We then use the 'append()' method to add the value 4 to the end of the list and the 'insert()' method to insert the value 5 at index 1."
+    },
+    {
+        "language": "Python",
+        "question": "How to remove items from a list in Python?",
+        "code": "# Removing list items\nmy_list = [1, 2, 3, 4, 5]\nmy_list.remove(3)\nmy_list.pop(1)",
+        "explanation": "To remove items from a list in Python, you can use the 'remove()' method to remove a specific value or the 'pop()' method to remove an item at a specified index. In the example code, we have a list 'my_list' containing elements 1 through 5. We use the 'remove()' method to remove the value 3 from the list, and the 'pop()' method to remove the item at index 1 (which is the second element, 2)."
+    },
+    {
+        "language": "Python",
+        "question": "How to loop through items in a list in Python?",
+        "code": "# Looping through list items\nmy_list = [1, 2, 3, 4, 5]\nfor item in my_list:\n    print(item)",
+        "explanation": "You can iterate through each item in a list using a 'for' loop in Python. In the example code, we have a list 'my_list' containing elements 1 through 5. We use a 'for' loop to iterate over each item in the list and print it."
+    },
+    {
+        "language": "Python",
+        "question": "How to copy a list in Python?",
+        "code": "# Copying a list\nmy_list = [1, 2, 3]\nnew_list = my_list.copy()",
+        "explanation": "To copy a list in Python, you can use the 'copy()' method or the list slicing syntax. In the example code, we create a list 'my_list' containing elements 1 through 3. We then create a new list 'new_list' by calling the 'copy()' method on 'my_list', which creates a shallow copy of the list."
+    },
+    {
+        "language": "Python",
+        "question": "How to sort a list in Python?",
+        "code": "# Sorting a list\nmy_list = [3, 1, 4, 2, 5]\nmy_list.sort()",
+        "explanation": "You can sort a list in Python using the 'sort()' method, which sorts the list in place. The elements in the list must be comparable for sorting to work correctly. In the example code, we have a list 'my_list' containing elements 3, 1, 4, 2, and 5. We use the 'sort()' method to sort the list in ascending order."
+    },
+    {
+        "language": "Python",
+        "question": "How to join lists in Python?",
+        "code": "# Joining lists\nlist1 = [1, 2, 3]\nlist2 = [4, 5, 6]\njoined_list = list1 + list2",
+        "explanation": "To join two or more lists in Python, you can use the concatenation operator (+) or the 'extend()' method. In the example code, we have two lists, 'list1' and 'list2', containing elements 1 through 3 and 4 through 6, respectively. We use the concatenation operator (+) to join the two lists and create a new list 'joined_list' containing all the elements from both lists."
+    },
+    {
+        "language": "Python",
+        "question": "What is a tuple in Python?",
+        "code": "",
+        "explanation": "A tuple is an ordered collection of elements, similar to a list. However, tuples are immutable, meaning their elements cannot be changed after creation. Tuples are defined using parentheses () and can contain elements of different data types."
+    },
+    {
+        "language": "Python",
+        "question": "How to create a tuple in Python?",
+        "code": "# Creating a tuple\nmy_tuple = (1, 2, 3, 'hello')",
+        "explanation": "To create a tuple in Python, you enclose the elements within parentheses (), separated by commas. Tuples can contain elements of different data types, including numbers, strings, and other tuples."
+    },
+    {
+        "language": "Python",
+        "question": "How to access elements of a tuple in Python?",
+        "code": "# Accessing tuple elements\nmy_tuple = (1, 2, 3, 'hello')\nprint(my_tuple[0])",
+        "explanation": "You can access individual elements of a tuple in Python using indexing. Indexing in Python starts from 0, so the first element of a tuple has an index of 0. Use square brackets [] and the index of the element you want to access."
+    },
+    {
+        "language": "Python",
+        "question": "What is a set in Python?",
+        "code": "",
+        "explanation": "A set in Python is an unordered collection of unique elements. Sets are mutable, meaning you can add or remove elements after creation. However, sets themselves are mutable, so you cannot change individual elements."
+    },
+    {
+        "language": "Python",
+        "question": "How to create a set in Python?",
+        "code": "# Creating a set\nmy_set = {1, 2, 3, 'hello'}",
+        "explanation": "To create a set in Python, you enclose the elements within curly braces {}, separated by commas. Sets automatically remove duplicate elements, so only unique elements are stored in the set."
+    },
+    {
+        "language": "Python",
+        "question": "How to access elements of a set in Python?",
+        "code": "",
+        "explanation": "Since sets are unordered, you cannot access elements of a set by index like you can with lists or tuples. Instead, you can check for membership using the 'in' keyword, or iterate over the set to access each element."
+    },
+    {
+        "language": "Python",
+        "question": "Can sets contain duplicate elements in Python?",
+        "code": "",
+        "explanation": "No, sets in Python automatically remove duplicate elements. When you create a set with duplicate elements, only one copy of each unique element is stored in the set."
+    },
+    {
+        "language": "Python",
+        "question": "How to loop over a set in Python?",
+        "code": "my_set = {1, 2, 3, 4, 5}\nfor item in my_set:\n    print(item)",
+        "explanation": "You can loop over a set in Python using a for loop. Since sets are unordered, the order of elements during iteration may vary."
+    },
+    {
+        "language": "Python",
+        "question": "What are dictionaries in Python?",
+        "code": "my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}",
+        "explanation": "Dictionaries in Python are unordered collections of key-value pairs. Each key is unique and associated with a value. Dictionaries are mutable, meaning their elements can be modified after creation."
+    },
+    {
+        "language": "Python",
+        "question": "How to access elements in a dictionary in Python?",
+        "code": "my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}\n\n# Access\nname = my_dict['name']\nage = my_dict.get('age')",
+        "explanation": "To access elements in a dictionary, you can use square brackets with the key or the get() method."
+    },
+    {
+        "language": "Python",
+        "question": "How to change the value associated with a key in a dictionary in Python?",
+        "code": "my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}\n\n# Change\nmy_dict['age'] = 31",
+        "explanation": "To change the value associated with a key in a dictionary, simply assign a new value to that key."
+    },
+    {
+        "language": "Python",
+        "question": "How to add a new key-value pair to a dictionary in Python?",
+        "code": "my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}\n\n# Add\nmy_dict['gender'] = 'Male'",
+        "explanation": "To add a new key-value pair to a dictionary, use square brackets with a new key or the update() method."
+    },
+    {
+        "language": "Python",
+        "question": "How to remove a key-value pair from a dictionary in Python?",
+        "code": "my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}\n\n# Remove\nmy_dict.pop('city')\ndel my_dict['age']",
+        "explanation": "To remove a key-value pair from a dictionary, you can use the pop() method with the key to remove, or the del keyword."
+    },
+    {
+        "language": "Python",
+        "question": "How to loop through a dictionary in Python?",
+        "code": "my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}\n\n# Loop\nfor key, value in my_dict.items():\n    print(key, value)",
+        "explanation": "To loop through a dictionary, you can use the items() method to iterate over key-value pairs."
+    }
+]
