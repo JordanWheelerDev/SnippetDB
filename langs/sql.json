@@ -1,0 +1,296 @@
+[
+    {
+        "language": "SQL",
+        "question": "How to select data from a table in SQL?",
+        "code": "SELECT column1, column2, ...\nFROM table_name;",
+        "explanation": "The SELECT statement is used to retrieve data from one or more tables in a database. You specify the columns you want to retrieve after the SELECT keyword and the table you want to retrieve data from after the FROM keyword."
+    },
+    {
+        "language": "SQL",
+        "question": "How to select distinct values from a column in SQL?",
+        "code": "SELECT DISTINCT column_name\nFROM table_name;",
+        "explanation": "The SELECT DISTINCT statement is used to retrieve unique (distinct) values from a specific column in a table. It returns only unique values, eliminating any duplicate values found in the specified column."
+    },
+    {
+        "language": "SQL",
+        "question": "How to filter rows using the WHERE clause in SQL?",
+        "code": "SELECT column1, column2, ...\nFROM table_name\nWHERE condition;",
+        "explanation": "The WHERE clause is used in SQL to filter rows based on a specified condition. It allows you to retrieve only the rows that meet the specified criteria. The condition can be any expression that evaluates to true, false, or unknown, such as comparisons, logical operators, or functions."
+    },
+    {
+        "language": "SQL",
+        "question": "How to sort rows using the ORDER BY clause in SQL?",
+        "code": "SELECT column1, column2, ...\nFROM table_name\nORDER BY column1 [ASC|DESC];",
+        "explanation": "The ORDER BY clause is used in SQL to sort the result set of a SELECT query based on one or more columns. By default, the sorting is done in ascending order (ASC), but you can specify descending order (DESC) if needed. You can also sort by multiple columns by separating them with commas."
+    },
+    {
+        "language": "SQL",
+        "question": "How to filter rows using the AND operator in SQL?",
+        "code": "SELECT column1, column2, ...\nFROM table_name\nWHERE condition1 AND condition2;",
+        "explanation": "The AND operator in SQL is used to filter rows based on multiple conditions. It selects rows that satisfy both conditions specified in the WHERE clause."
+    },
+    {
+        "language": "SQL",
+        "question": "How to filter rows using the OR operator in SQL?",
+        "code": "SELECT column1, column2, ...\nFROM table_name\nWHERE condition1 OR condition2;",
+        "explanation": "The OR operator in SQL is used to filter rows based on multiple conditions. It selects rows that satisfy either of the conditions specified in the WHERE clause."
+    },
+    {
+        "language": "SQL",
+        "question": "How to filter rows using the NOT operator in SQL?",
+        "code": "SELECT column1, column2, ...\nFROM table_name\nWHERE NOT condition;",
+        "explanation": "The NOT operator in SQL is used to negate a condition specified in the WHERE clause. It selects rows that do not satisfy the specified condition."
+    },
+    {
+        "language": "SQL",
+        "question": "How to insert data into a table using the INSERT INTO statement in SQL?",
+        "code": "INSERT INTO table_name (column1, column2, ...)\nVALUES (value1, value2, ...);",
+        "explanation": "The INSERT INTO statement in SQL is used to insert new rows of data into a specified table. It specifies the table name and the columns into which data will be inserted, followed by the values to be inserted into those columns."
+    },
+    {
+        "language": "SQL",
+        "question": "How to check for NULL and NOT NULL values in SQL?",
+        "code": "SELECT column1, column2, ...\nFROM table_name\nWHERE column_name IS NULL;\n\nSELECT column1, column2, ...\nFROM table_name\nWHERE column_name IS NOT NULL;",
+        "explanation": "In SQL, the IS NULL and IS NOT NULL operators are used to check for NULL and NOT NULL values, respectively, in a specified column. The IS NULL operator returns rows where the specified column contains NULL values, while the IS NOT NULL operator returns rows where the specified column contains non-NULL values."
+    },
+    {
+        "language": "SQL",
+        "question": "How to update records in SQL?",
+        "code": "UPDATE table_name\nSET column1 = value1, column2 = value2, ...\nWHERE condition;",
+        "explanation": "The UPDATE statement in SQL is used to modify existing records in a table. It allows you to update one or more columns with new values based on a specified condition. This is useful for making changes to specific data entries within a database."
+    },
+    {
+        "language": "SQL",
+        "question": "How to delete records in SQL?",
+        "code": "DELETE FROM table_name\nWHERE condition;",
+        "explanation": "The DELETE statement in SQL is used to remove existing records from a table based on a specified condition. It allows you to selectively delete data entries from the database, helping to manage and maintain the integrity of your data."
+    },
+    {
+        "language": "SQL",
+        "question": "How to select top records in SQL?",
+        "code": "SELECT TOP n column1, column2, ...\nFROM table_name\nWHERE condition;",
+        "explanation": "The SELECT TOP statement in SQL is used to retrieve a specified number of rows from the top of a result set. It allows you to limit the number of records returned by a query, which can be useful when dealing with large datasets or when you only need to retrieve a subset of the data."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use MIN() function in SQL?",
+        "code": "SELECT MIN(column_name) FROM table_name;",
+        "explanation": "The MIN() function in SQL is used to retrieve the smallest value in a selected column of a table. It can be applied to numerical or date/time data types."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use MAX() function in SQL?",
+        "code": "SELECT MAX(column_name) FROM table_name;",
+        "explanation": "The MAX() function in SQL is used to retrieve the largest value in a selected column of a table. It can be applied to numerical or date/time data types."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use COUNT() function in SQL?",
+        "code": "SELECT COUNT(column_name) FROM table_name;",
+        "explanation": "The COUNT() function in SQL is used to count the number of rows in a table that meet a specified condition. It can also be used without any condition to count all rows in the table."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use SUM() function in SQL?",
+        "code": "SELECT SUM(column_name) FROM table_name;",
+        "explanation": "The SUM() function in SQL is used to calculate the total sum of values in a selected column of a table. It is typically applied to numerical data types."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use AVG() function in SQL?",
+        "code": "SELECT AVG(column_name) FROM table_name;",
+        "explanation": "The AVG() function in SQL is used to calculate the average value of the numeric column in a table. It returns the average of all non-NULL values."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use LIKE operator in SQL?",
+        "code": "SELECT * FROM table_name WHERE column_name LIKE 'pattern';",
+        "explanation": "The LIKE operator in SQL is used to search for a specified pattern in a column. It is commonly used with the '%' wildcard to match any sequence of characters, and '_' wildcard to match any single character."
+    },
+    {
+        "language": "SQL",
+        "question": "What are SQL wildcards?",
+        "code": "",
+        "explanation": "SQL wildcards are special characters used with the LIKE operator to search for patterns within strings. The '%' wildcard matches zero or more characters, while the '_' wildcard matches exactly one character."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use SQL wildcards?",
+        "code": "SELECT * FROM customers WHERE name LIKE 'J%'",
+        "explanation": "This SQL query selects all customers whose names start with 'J', using the '%' wildcard to match any number of characters following 'J'."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL IN operator?",
+        "code": "SELECT * FROM customers WHERE country IN ('USA', 'Canada', 'UK')",
+        "explanation": "The SQL IN operator is used to specify multiple values in a WHERE clause. It allows you to filter results based on a list of specified values."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL BETWEEN operator?",
+        "code": "SELECT * FROM orders WHERE order_date BETWEEN '2022-01-01' AND '2022-12-31'",
+        "explanation": "The SQL BETWEEN operator is used to select values within a specified range. It includes both the starting and ending values specified in the range."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL INNER JOIN?",
+        "code": "SELECT orders.order_id, customers.customer_name\nFROM orders\nINNER JOIN customers ON orders.customer_id = customers.customer_id;",
+        "explanation": "The SQL INNER JOIN retrieves records from both tables where there is a match between the specified columns in both tables. It returns only the rows that have matching values in both tables."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL LEFT JOIN?",
+        "code": "SELECT orders.order_id, customers.customer_name\nFROM orders\nLEFT JOIN customers ON orders.customer_id = customers.customer_id;",
+        "explanation": "The SQL LEFT JOIN returns all records from the left table (the first table specified in the JOIN clause), and the matched records from the right table (the second table specified) based on the specified condition. If there is no match, NULL values are returned for the columns from the right table."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL RIGHT JOIN?",
+        "code": "SELECT orders.order_id, customers.customer_name\nFROM orders\nRIGHT JOIN customers ON orders.customer_id = customers.customer_id;",
+        "explanation": "The SQL RIGHT JOIN returns all records from the right table (the second table specified in the JOIN clause), and the matched records from the left table (the first table specified) based on the specified condition. If there is no match, NULL values are returned for the columns from the left table."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL FULL JOIN?",
+        "code": "SELECT orders.order_id, customers.customer_name\nFROM orders\nFULL JOIN customers ON orders.customer_id = customers.customer_id;",
+        "explanation": "The SQL FULL JOIN returns all records when there is a match in either the left (first table) or right (second table) table records. It retrieves all records from both tables and combines them. If there is no match, NULL values are returned for the columns from the table that lacks a matching row."
+    },
+    {
+        "language": "SQL",
+        "question": "How to perform a self join in SQL?",
+        "code": "SELECT e1.employee_id, e1.employee_name, e2.manager_name\nFROM employees e1\nINNER JOIN employees e2 ON e1.manager_id = e2.employee_id;",
+        "explanation": "A self join in SQL is when a table is joined with itself. It is typically used to compare rows within the same table based on a related column, such as an employee and their manager. In the provided example, the 'employees' table is self-joined to retrieve the employee's name and their manager's name."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL UNION operator?",
+        "code": "SELECT city FROM customers\nUNION\nSELECT city FROM suppliers;",
+        "explanation": "The SQL UNION operator is used to combine the result sets of two or more SELECT statements into a single result set. It removes duplicate rows by default. In the provided example, the cities from the 'customers' table and the 'suppliers' table are combined into a single result set."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL GROUP BY clause?",
+        "code": "SELECT department, COUNT(*) as num_employees\nFROM employees\nGROUP BY department;",
+        "explanation": "The SQL GROUP BY clause is used in collaboration with aggregate functions (such as COUNT, SUM, AVG) to group rows that have the same values into summary rows. It is commonly used with aggregate functions to produce summary reports. In the provided example, the number of employees in each department is calculated by grouping the rows based on the 'department' column."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL HAVING clause?",
+        "code": "SELECT department, COUNT(*) as num_employees\nFROM employees\nGROUP BY department\nHAVING COUNT(*) > 10;",
+        "explanation": "The SQL HAVING clause is used in combination with the GROUP BY clause to filter the results returned by a GROUP BY clause based on aggregate values. It allows you to specify a condition for groups of rows. In the provided example, the HAVING clause is used to filter departments with more than 10 employees."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL ANY and ALL operators?",
+        "code": "SELECT product_name, price\nFROM products\nWHERE price > ALL (SELECT price FROM products);",
+        "explanation": "The SQL ANY and ALL operators are used in combination with subqueries to compare a value with a set of values returned by a subquery. The ANY operator returns true if any of the subquery values meet the condition, while the ALL operator returns true if all the subquery values meet the condition. In the provided example, the price of each product is compared with the highest price in the products table using the ALL operator."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL EXISTS operator?",
+        "code": "SELECT customer_name\nFROM customers c\nWHERE EXISTS (SELECT 1 FROM orders o WHERE o.customer_id = c.customer_id);",
+        "explanation": "The SQL EXISTS operator is used to test for the existence of any records in a subquery. It returns true if the subquery returns one or more rows, otherwise it returns false. It is commonly used with correlated subqueries to check for the existence of related records. In the provided example, it retrieves the names of customers who have placed orders."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL INSERT INTO SELECT statement?",
+        "code": "INSERT INTO new_table (column1, column2, ...)\nSELECT column1, column2, ...\nFROM existing_table\nWHERE condition;",
+        "explanation": "The SQL INSERT INTO SELECT statement copies data from one table and inserts it into another table. It allows you to specify the columns you want to insert data into and select the data from an existing table or query. You can also include a WHERE clause to filter the rows to be copied."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL SELECT INTO statement?",
+        "code": "SELECT *\nINTO new_table\nFROM existing_table\nWHERE condition;",
+        "explanation": "The SQL SELECT INTO statement creates a new table and inserts data from an existing table into it. It copies both the data and the structure (columns) of the existing table. You can also include a WHERE clause to filter the rows to be copied."
+    },
+    {
+        "language": "SQL",
+        "question": "How to use the SQL CASE statement?",
+        "code": "SELECT column1,\n       CASE\n           WHEN condition1 THEN result1\n           WHEN condition2 THEN result2\n           ELSE default_result\n       END AS new_column\nFROM table_name;",
+        "explanation": "The SQL CASE statement is used to add conditional logic to a query. It evaluates a list of conditions and returns one of several possible results based on those conditions. It can be used in SELECT, INSERT, UPDATE, or DELETE statements. In the provided example, the CASE statement checks conditions and returns different results based on the conditions met."
+    },
+    {
+        "language": "SQL",
+        "question": "What is an SQL comment?",
+        "code": "-- This is a single-line comment\n\n/*\nThis is\na\nmulti-line\ncomment\n*/",
+        "explanation": "In SQL, comments are used to add explanatory notes or annotations within the SQL code. There are two types of comments: single-line comments, which begin with --, and multi-line comments, which are enclosed within /* */. Comments are ignored by the SQL engine and have no effect on the execution of the SQL code."
+    },
+    {
+        "language": "SQL",
+        "question": "How to create a database in SQL?",
+        "code": "CREATE DATABASE database_name;",
+        "explanation": "The `CREATE DATABASE` statement is used to create a new database in SQL with the specified name."
+    },
+    {
+        "language": "SQL",
+        "question": "How to drop (delete) a database in SQL?",
+        "code": "DROP DATABASE database_name;",
+        "explanation": "The `DROP DATABASE` statement is used to permanently delete a database in SQL. Caution should be exercised when using this statement as it irreversibly removes all data and schema objects associated with the specified database."
+    },
+    {
+        "language": "SQL",
+        "question": "How to back up a database in SQL?",
+        "code": "BACKUP DATABASE database_name TO disk = 'backup_file_path';",
+        "explanation": "The `BACKUP DATABASE` statement is used to create a backup of a database in SQL. It allows you to create a copy of the database's data and schema objects for the purpose of restoring them in case of data loss or corruption."
+    },
+    {
+        "language": "SQL",
+        "question": "How to create a table in SQL?",
+        "code": "CREATE TABLE table_name (\n  column1 datatype1,\n  column2 datatype2,\n  ...\n);",
+        "explanation": "The `CREATE TABLE` statement is used to create a new table in a database. It specifies the table name and defines the columns along with their data types and optional constraints."
+    },
+    {
+        "language": "SQL",
+        "question": "How to drop (delete) a table in SQL?",
+        "code": "DROP TABLE table_name;",
+        "explanation": "The `DROP TABLE` statement is used to delete a table from the database in SQL. It permanently removes the table and all its data and structure from the database."
+    },
+    {
+        "language": "SQL",
+        "question": "How to alter a table in SQL?",
+        "code": "ALTER TABLE table_name ADD column_name datatype;",
+        "explanation": "The `ALTER TABLE` statement in SQL is used to add a new column to an existing table. It allows you to modify the structure of a table by adding, modifying, or dropping columns, constraints, or indexes."
+    },
+    {
+        "language": "SQL",
+        "question": "How to define unique constraint in SQL?",
+        "code": "CREATE TABLE table_name (\n    column1 datatype UNIQUE,\n    column2 datatype\n);",
+        "explanation": "In SQL, the `UNIQUE` constraint ensures that all values in a column are unique. When you define a column with a `UNIQUE` constraint, no two rows can have the same value in that column."
+    },
+    {
+        "language": "SQL",
+        "question": "How to define primary key in SQL?",
+        "code": "CREATE TABLE table_name (\n    column1 datatype PRIMARY KEY,\n    column2 datatype\n);",
+        "explanation": "In SQL, the `PRIMARY KEY` constraint uniquely identifies each record in a table. The primary key column cannot have NULL values, and each value in the primary key column must be unique."
+    },
+    {
+        "language": "SQL",
+        "question": "How to define foreign key in SQL?",
+        "code": "CREATE TABLE table1 (\n    column1 datatype PRIMARY KEY,\n    column2 datatype\n);\n\nCREATE TABLE table2 (\n    column1 datatype PRIMARY KEY,\n    column2 datatype,\n    CONSTRAINT fk_column2 FOREIGN KEY (column2) REFERENCES table1(column1)\n);",
+        "explanation": "In SQL, a `FOREIGN KEY` constraint is used to link two tables together by referencing the primary key of one table from another table. It ensures referential integrity between the two related tables."
+    },
+    {
+        "language": "SQL",
+        "question": "How to create an index in SQL?",
+        "code": "CREATE INDEX index_name ON table_name (column1, column2);",
+        "explanation": "In SQL, an index is a database object used to speed up the retrieval of rows from a table. It allows the database server to quickly find the rows matching a given criterion. Indexes are created using the `CREATE INDEX` statement."
+    },
+    {
+        "language": "SQL",
+        "question": "How to define a date column in SQL?",
+        "code": "CREATE TABLE table_name (\n    column1 DATE,\n    column2 DATETIME\n);",
+        "explanation": "In SQL, you can define date and datetime columns to store date and time values, respectively. The `DATE` type is used for dates without time components, while the `DATETIME` type includes both date and time information."
+    },
+    {
+        "language": "SQL",
+        "question": "How to insert a date value into a SQL table?",
+        "code": "INSERT INTO table_name (date_column) VALUES ('2024-04-01');",
+        "explanation": "When inserting date values into a SQL table, you need to specify the date in the format 'YYYY-MM-DD'. This format is recognized by most SQL database systems and ensures proper insertion of date values."
+    },
+    {
+        "language": "SQL",
+        "question": "How to retrieve records based on date in SQL?",
+        "code": "SELECT * FROM table_name WHERE date_column = '2024-04-01';",
+        "explanation": "To retrieve records based on a date in SQL, you can use the `WHERE` clause with the appropriate condition. In this example, the query selects all records where the date_column matches the specified date ('2024-04-01')."
+    }
+]

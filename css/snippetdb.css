@@ -37,6 +37,10 @@ code {
   border-left: 5px solid #3572a5;
 }
 
+.sql {
+  border-left: 5px solid #51afef;
+}
+
 .suggestion-link {
   text-decoration: none;
   transition: all 0.2s ease-in-out;
