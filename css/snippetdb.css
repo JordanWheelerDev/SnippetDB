@@ -41,6 +41,10 @@ code {
   border-left: 5px solid #51afef;
 }
 
+.react {
+  border-left: 5px solid #61dbfb;
+}
+
 .suggestion-link {
   text-decoration: none;
   transition: all 0.2s ease-in-out;

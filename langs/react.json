@@ -1,0 +1,110 @@
+[
+    {
+        "language": "React",
+        "question": "What is JSX in React?",
+        "code": "const element = <h1>Hello, world!</h1>;",
+        "explanation": "JSX (JavaScript XML) is a syntax extension for JavaScript used with React. It allows you to write HTML-like code within JavaScript, making it easier to define React components by combining UI elements and JavaScript logic in a single file."
+    },
+    {
+        "language": "React",
+        "question": "How to create a React component?",
+        "code": "import React from 'react';\n\nfunction MyComponent() {\n  return <div>Hello, World!</div>;\n}\n\nexport default MyComponent;",
+        "explanation": "A React component is a reusable piece of UI that can contain both markup and logic. In this example, we define a functional component called MyComponent that returns a JSX element representing a simple div with the text 'Hello, World!'. The component is exported so it can be used elsewhere in the application."
+    },
+    {
+        "language": "React",
+        "question": "How to create a class component in React?",
+        "code": "import React, { Component } from 'react';\n\nclass MyClassComponent extends Component {\n  render() {\n    return <div>Hello, World!</div>;\n  }\n}\n\nexport default MyClassComponent;",
+        "explanation": "In React, class components are ES6 classes that extend the React.Component class. They must contain a render() method that returns a JSX element. In this example, we define a class component called MyClassComponent that renders a simple div with the text 'Hello, World!'. The component is exported so it can be used elsewhere in the application."
+    },
+    {
+        "language": "React",
+        "question": "How to use props in a React component?",
+        "code": "import React from 'react';\n\nconst MyComponent = (props) => {\n  return <div>{props.message}</div>;\n};\n\nexport default MyComponent;",
+        "explanation": "In React, props are used to pass data from parent to child components. They are read-only and cannot be modified within the component. In this example, the component receives props as an argument and uses the data passed through props to render content."
+    },
+    {
+        "language": "React",
+        "question": "How to handle events in a React component?",
+        "code": "import React, { useState } from 'react';\n\nconst MyComponent = () => {\n  const [count, setCount] = useState(0);\n\n  const handleClick = () => {\n    setCount(count + 1);\n  };\n\n  return (\n    <div>\n      <p>Count: {count}</p>\n      <button onClick={handleClick}>Increment</button>\n    </div>\n  );\n};\n\nexport default MyComponent;",
+        "explanation": "In React, event handling is similar to handling events in HTML. We use event handlers like onClick, onChange, etc., to execute functions when events occur. In this example, we define a component that tracks a count state and increments it when a button is clicked."
+    },
+    {
+        "language": "React",
+        "question": "How to use conditionals in a React component?",
+        "code": "import React from 'react';\n\nconst MyComponent = ({ isLoggedIn }) => {\n  return isLoggedIn ? <p>Welcome, User!</p> : <p>Please log in.</p>;\n};\n\nexport default MyComponent;",
+        "explanation": "In React, conditional rendering allows us to render different elements or components based on certain conditions. We can use ternary operators or logical && operators for simple conditions. In this example, the component renders a different message based on whether the user is logged in."
+    },
+    {
+        "language": "React",
+        "question": "How to render lists in a React component?",
+        "code": "import React from 'react';\n\nconst MyComponent = ({ items }) => {\n  return (\n    <ul>\n      {items.map((item, index) => (\n        <li key={index}>{item}</li>\n      ))}\n    </ul>\n  );\n};\n\nexport default MyComponent;",
+        "explanation": "In React, we can render lists by mapping over an array of data and generating a component for each item in the list. We use the map() function to iterate over the array and return JSX elements. Each list item should have a unique key prop to help React identify which items have changed, added, or removed."
+    },
+    {
+        "language": "React",
+        "question": "How to handle forms in a React component?",
+        "code": "import React, { useState } from 'react';\n\nconst MyComponent = () => {\n  const [value, setValue] = useState('');\n\n  const handleChange = (event) => {\n    setValue(event.target.value);\n  };\n\n  const handleSubmit = (event) => {\n    event.preventDefault();\n    // Handle form submission\n  };\n\n  return (\n    <form onSubmit={handleSubmit}>\n      <input type=\"text\" value={value} onChange={handleChange} />\n      <button type=\"submit\">Submit</button>\n    </form>\n  );\n};\n\nexport default MyComponent;",
+        "explanation": "In React, forms are handled using controlled components, where form data is controlled by React components. We use the value attribute and onChange event to manage form inputs and handle user input. In this example, the component manages the value of an input field and handles form submission."
+    },
+    {
+        "language": "React",
+        "question": "How to use React Router for routing in a React application?",
+        "code": "import React from 'react';\nimport { BrowserRouter as Router, Route, Switch } from 'react-router-dom';\nimport Home from './Home';\nimport About from './About';\nimport Contact from './Contact';\n\nconst App = () => {\n  return (\n    <Router>\n      <Switch>\n        <Route exact path=\"/\" component={Home} />\n        <Route path=\"/about\" component={About} />\n        <Route path=\"/contact\" component={Contact} />\n      </Switch>\n    </Router>\n  );\n};\n\nexport default App;",
+        "explanation": "React Router is a library that allows for navigation and routing in a React application. It provides components like BrowserRouter, Route, and Switch to manage routing. In this example, we define routes using the Route component and specify the component to render for each route."
+    },
+    {
+        "language": "React",
+        "question": "What is React.memo() in React?",
+        "code": "import React from 'react';\n\nconst MyComponent = React.memo((props) => {\n  /* Component logic */\n});\n\nexport default MyComponent;",
+        "explanation": "React.memo() is a higher-order component provided by React that memoizes the rendered output of a component, preventing unnecessary re-renders. It's similar to PureComponent but for function components. When the props of a memoized component change, React only re-renders the component if its props have actually changed, optimizing performance by avoiding unnecessary re-renders."
+    },
+    {
+        "language": "React",
+        "question": "What is a hook in React?",
+        "code": "",
+        "explanation": "In React, a hook is a special function that allows you to use state and other React features in functional components. Hooks were introduced in React 16.8 as a way to use stateful logic in functional components without needing to convert them to class components."
+    },
+    {
+        "language": "React",
+        "question": "What is useState() hook in React?",
+        "code": "import React, { useState } from 'react';\n\nconst MyComponent = () => {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div>\n      <p>Count: {count}</p>\n      <button onClick={() => setCount(count + 1)}>Increment</button>\n    </div>\n  );\n};",
+        "explanation": "useState() is a hook in React that allows functional components to manage state. It returns a stateful value and a function to update that value. The initial state is passed as an argument to useState(). In the example, count is the state variable, and setCount is the function to update it."
+    },
+    {
+        "language": "React",
+        "question": "What is useEffect() hook in React?",
+        "code": "import React, { useState, useEffect } from 'react';\n\nconst MyComponent = () => {\n  const [data, setData] = useState(null);\n\n  useEffect(() => {\n    // Fetch data\n    fetch('https://api.example.com/data')\n      .then(response => response.json())\n      .then(data => setData(data));\n  }, []);\n\n  return <div>{data ? data.name : 'Loading...'}</div>;\n};",
+        "explanation": "useEffect() is a hook in React that allows functional components to perform side effects. It's similar to componentDidMount, componentDidUpdate, and componentWillUnmount lifecycle methods combined in class components. useEffect() takes a function as its first argument, which will be executed after the component renders. The second argument is an optional array of dependencies. If provided, the effect will only run if one of the dependencies has changed."
+    },
+    {
+        "language": "React",
+        "question": "What is useRef() hook in React?",
+        "code": "import React, { useRef } from 'react';\n\nconst MyComponent = () => {\n  const inputRef = useRef(null);\n\n  const handleClick = () => {\n    inputRef.current.focus();\n  };\n\n  return (\n    <div>\n      <input ref={inputRef} type='text' />\n      <button onClick={handleClick}>Focus Input</button>\n    </div>\n  );\n};",
+        "explanation": "useRef() is a hook in React that returns a mutable ref object. The ref object persists for the entire lifecycle of the component. useRef() is useful for accessing DOM elements, keeping mutable values without triggering re-renders, and interacting imperatively with child components."
+    },
+    {
+        "language": "React",
+        "question": "What is useContext() hook in React?",
+        "code": "import React, { useContext } from 'react';\n\nconst ThemeContext = React.createContext('light');\n\nconst MyComponent = () => {\n  const theme = useContext(ThemeContext);\n\n  return <div>Current theme: {theme}</div>;\n};",
+        "explanation": "useContext() is a hook in React that allows functional components to consume context without nesting. It takes a context object (created with React.createContext) as its argument and returns the current context value for that context. useContext() is particularly useful for accessing global state or themes across multiple components."
+    },
+    {
+        "language": "React",
+        "question": "What is useReducer() hook in React?",
+        "code": "import React, { useReducer } from 'react';\n\nconst initialState = { count: 0 };\n\nconst reducer = (state, action) => {\n  switch (action.type) {\n    case 'increment':\n      return { count: state.count + 1 };\n    case 'decrement':\n      return { count: state.count - 1 };\n    default:\n      return state;\n  }\n};\n\nconst MyComponent = () => {\n  const [state, dispatch] = useReducer(reducer, initialState);\n\n  return (\n    <div>\n      <p>Count: {state.count}</p>\n      <button onClick={() => dispatch({ type: 'increment' })}>Increment</button>\n      <button onClick={() => dispatch({ type: 'decrement' })}>Decrement</button>\n    </div>\n  );\n};",
+        "explanation": "useReducer() is a hook in React that is used for managing complex state logic. It accepts a reducer function and an initial state, and returns the current state paired with a dispatch method. The dispatch method allows you to dispatch actions to update the state based on the action type."
+    },
+    {
+        "language": "React",
+        "question": "What is useCallback() hook in React?",
+        "code": "import React, { useState, useCallback } from 'react';\n\nconst MyComponent = () => {\n  const [count, setCount] = useState(0);\n\n  const increment = useCallback(() => {\n    setCount(count + 1);\n  }, [count]);\n\n  return (\n    <div>\n      <p>Count: {count}</p>\n      <button onClick={increment}>Increment</button>\n    </div>\n  );\n};",
+        "explanation": "useCallback() is a hook in React that returns a memoized callback function. It's useful when passing callbacks to child components to prevent unnecessary re-renders. useCallback() memoizes the function instance, so it will only change if one of the dependencies has changed. This can help optimize performance by preventing unnecessary re-renders of child components."
+    },
+    {
+        "language": "React",
+        "question": "What are custom hooks in React?",
+        "code": "",
+        "explanation": "Custom hooks are JavaScript functions that follow a naming convention where the name starts with 'use' and can call other hooks. They allow you to extract reusable logic from components and share it across multiple components. Custom hooks enable you to reuse stateful logic without changing component hierarchy."
+    }
+]

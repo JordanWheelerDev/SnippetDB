@@ -85,6 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
         case "python":
             searchInput.placeholder = "What are dictionaries in Python?";
             break;
+        case "react":
+            searchInput.placeholder = "What is useReducer() hook in React?";
+            break;
           default:
             searchInput.placeholder = "Enter your search query";
         }
