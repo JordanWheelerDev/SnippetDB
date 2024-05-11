@@ -1,0 +1,254 @@
+[
+    {
+        "language": "CSS",
+        "question": "What are class selectors in CSS?",
+        "code": ".class-name {\n  /* CSS styles */\n}",
+        "explanation": "Class selectors in CSS are used to select elements based on the value of their \"class\" attribute. They begin with a period (\".\") followed by the class name. Multiple elements can share the same class, and a class can be applied to multiple elements. Class selectors are commonly used for styling and applying CSS rules to specific groups of elements."
+    },
+    {
+        "language": "CSS",
+        "question": "What are ID selectors in CSS?",
+        "code": "#id-name {\n  /* CSS styles */\n}",
+        "explanation": "ID selectors in CSS are used to select elements based on the value of their \"id\" attribute. They begin with a hash symbol (\"#\") followed by the ID name. Each element in an HTML document must have a unique ID, and ID selectors can only be applied to one element. ID selectors are less flexible than class selectors but can be useful for targeting specific elements for styling or scripting purposes."
+    },
+    {
+        "language": "CSS",
+        "question": "What are element selectors in CSS?",
+        "code": "p {\n  /* CSS styles */\n}",
+        "explanation": "Element selectors in CSS are used to select elements based on their HTML tag name. They target all elements of a specified type on a webpage. Element selectors do not require any prefix and are simply the name of the HTML tag (e.g., \"div\", \"p\", \"h1\", etc.). Element selectors apply styles universally to all matching elements, making them useful for applying broad styling rules to various parts of a webpage."
+    },
+    {
+        "language": "CSS",
+        "question": "What is a CSS comment?",
+        "code": "/* This is a CSS comment */",
+        "explanation": "In CSS, comments are used to add explanatory notes or temporarily disable specific styles without affecting the rendering of the webpage. CSS comments begin with \"/*\" and end with \"*/\". Anything between these delimiters is treated as a comment and is ignored by the browser when rendering the webpage. Comments can span multiple lines and are commonly used for documentation or debugging purposes."
+    },
+    {
+        "language": "CSS",
+        "question": "How to specify colors using hexadecimal notation in CSS?",
+        "code": "color: #ff0000;",
+        "explanation": "In CSS, hexadecimal notation is commonly used to specify colors. Hexadecimal colors are represented by a pound sign (#) followed by six characters, where each pair of characters represents the red, green, and blue (RGB) components of the color, respectively. For example, #ff0000 represents the color red, with maximum intensity for red and no intensity for green and blue."
+    },
+    {
+        "language": "CSS",
+        "question": "How to specify colors using RGB notation in CSS?",
+        "code": "color: rgb(255, 0, 0);",
+        "explanation": "In CSS, RGB (Red, Green, Blue) notation is used to specify colors. RGB colors are represented by the 'rgb()' function, where the values of red, green, and blue components are specified as integers ranging from 0 to 255. For example, 'rgb(255, 0, 0)' represents the color red, with maximum intensity for red and no intensity for green and blue."
+    },
+    {
+        "language": "CSS",
+        "question": "How to specify colors using HSL notation in CSS?",
+        "code": "color: hsl(120, 100%, 50%);",
+        "explanation": "In CSS, HSL (Hue, Saturation, Lightness) notation is used to specify colors. HSL colors are represented by the 'hsl()' function, where the values of hue, saturation, and lightness are specified. Hue is represented as an angle in degrees (0 to 360), saturation and lightness are represented as percentages (0% to 100%). For example, 'hsl(120, 100%, 50%)' represents the color green at maximum saturation and 50% lightness."
+    },
+    {
+        "language": "CSS",
+        "question": "How to set the background color of an element in CSS?",
+        "code": "background-color: #ff0000;",
+        "explanation": "The 'background-color' property is used to set the background color of an element in CSS. It accepts a color value in various formats such as hex, RGB, or color names. For example, 'background-color: #ff0000;' sets the background color to red."
+    },
+    {
+        "language": "CSS",
+        "question": "How to set a background image for an element in CSS?",
+        "code": "background-image: url('image.jpg');",
+        "explanation": "The 'background-image' property is used to set a background image for an element in CSS. It accepts a URL value that specifies the location of the image file. For example, 'background-image: url('image.jpg');' sets the background image to the file 'image.jpg'."
+    },
+    {
+        "language": "CSS",
+        "question": "How to repeat a background image in CSS?",
+        "code": "background-repeat: repeat-x;",
+        "explanation": "The 'background-repeat' property is used to control how a background image is repeated within its container in CSS. It accepts values like 'repeat', 'repeat-x', 'repeat-y', or 'no-repeat'. For example, 'background-repeat: repeat-x;' repeats the background image horizontally."
+    },
+    {
+        "language": "CSS",
+        "question": "How to specify the attachment of a background image in CSS?",
+        "code": "background-attachment: fixed;",
+        "explanation": "The 'background-attachment' property is used to specify whether a background image scrolls with the content or remains fixed as the page is scrolled in CSS. It accepts values like 'scroll' or 'fixed'. For example, 'background-attachment: fixed;' fixes the background image in place."
+    },
+    {
+        "language": "CSS",
+        "question": "How to use the background shorthand property in CSS?",
+        "code": "background: #ff0000 url('image.jpg') repeat-x fixed;",
+        "explanation": "The 'background' shorthand property allows you to set all background properties (color, image, repeat, attachment) in a single declaration. It follows the order: color, image, repeat, attachment. For example, 'background: #ff0000 url('image.jpg') repeat-x fixed;' sets the background color to red, applies the image 'image.jpg', repeats it horizontally, and fixes it in place."
+    },
+    {
+        "language": "CSS",
+        "question": "How to set borders in CSS?",
+        "code": "border: 1px solid black;",
+        "explanation": "Borders in CSS can be set using the 'border' property. It combines the properties for border width, border style, and border color into a single declaration. For example, 'border: 1px solid black;' sets a border of 1 pixel width, solid style, and black color."
+    },
+    {
+        "language": "CSS",
+        "question": "How to specify the width of borders in CSS?",
+        "code": "border-width: 2px;",
+        "explanation": "The 'border-width' property in CSS is used to specify the width of borders. It can be set in pixels, ems, rems, or other units. For example, 'border-width: 2px;' sets the border width to 2 pixels."
+    },
+    {
+        "language": "CSS",
+        "question": "How to set the color of borders in CSS?",
+        "code": "border-color: red;",
+        "explanation": "The 'border-color' property in CSS is used to specify the color of borders. It accepts color values such as hex, RGB, HSL, or color names. For example, 'border-color: red;' sets the border color to red."
+    },
+    {
+        "language": "CSS",
+        "question": "How to specify borders on specific sides in CSS?",
+        "code": "border-top: 1px solid black;\nborder-bottom: 2px dashed blue;",
+        "explanation": "Borders on specific sides can be set individually using properties like 'border-top', 'border-bottom', 'border-left', and 'border-right'. Each property combines the width, style, and color of the border for the specified side. For example, 'border-top: 1px solid black;' sets a solid black border on the top side."
+    },
+    {
+        "language": "CSS",
+        "question": "How to use the border shorthand property in CSS?",
+        "code": "border: 1px solid black;",
+        "explanation": "The 'border' shorthand property in CSS allows you to set all border properties (width, style, color) in a single declaration. The order is: width, style, color. For example, 'border: 1px solid black;' sets a border of 1 pixel width, solid style, and black color."
+    },
+    {
+        "language": "CSS",
+        "question": "How to create rounded borders in CSS?",
+        "code": "border-radius: 10px;",
+        "explanation": "The 'border-radius' property in CSS is used to create rounded borders for an element. It specifies the radius of the border corners. For example, 'border-radius: 10px;' creates rounded corners with a radius of 10 pixels."
+    },
+    {
+        "language": "CSS",
+        "question": "How to set different border styles in CSS?",
+        "code": "border-style: solid;",
+        "explanation": "The 'border-style' property in CSS is used to specify the style of the border. It can take values like 'solid', 'dashed', 'dotted', 'double', 'groove', 'ridge', 'inset', 'outset', or 'none'. For example, 'border-style: solid;' sets a solid border style."
+    },
+    {
+        "language": "CSS",
+        "question": "How to set margins in CSS?",
+        "code": "margin: 10px;",
+        "explanation": "The 'margin' property in CSS is used to set the margins for an element. It can take one, two, three, or four values, which represent the top, right, bottom, and left margins respectively. For example, 'margin: 10px;' sets a margin of 10 pixels on all sides of the element."
+    },
+    {
+        "language": "CSS",
+        "question": "How to set padding in CSS?",
+        "code": "padding: 10px;",
+        "explanation": "The 'padding' property in CSS is used to set the padding for an element. It can take one, two, three, or four values, which represent the top, right, bottom, and left padding respectively. For example, 'padding: 10px;' sets a padding of 10 pixels on all sides of the element."
+    },
+    {
+        "language": "CSS",
+        "question": "How to set the height of an element in CSS?",
+        "code": "height: 100px;",
+        "explanation": "The 'height' property in CSS is used to set the height of an element. It can be specified in pixels, percentages, ems, or other CSS length units. For example, 'height: 100px;' sets the height of the element to 100 pixels."
+    },
+    {
+        "language": "CSS",
+        "question": "How to set the width of an element in CSS?",
+        "code": "width: 200px;",
+        "explanation": "The 'width' property in CSS is used to set the width of an element. Similar to height, it can be specified in various units. For example, 'width: 200px;' sets the width of the element to 200 pixels."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'outline' property?",
+        "code": "outline: 2px solid black;",
+        "explanation": "The 'outline' property in CSS is used to add a border around an element outside the border edge of its border box. It is often used to highlight elements or provide focus styles. The value of 'outline' typically includes the outline width, style, and color. For example, 'outline: 2px solid black;' adds a 2-pixel solid black outline around the element."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'outline-style' property?",
+        "code": "outline-style: dashed;",
+        "explanation": "The 'outline-style' property in CSS is used to specify the style of the outline around an element. It can take values like 'solid', 'dashed', 'dotted', 'double', etc. For example, 'outline-style: dashed;' creates a dashed outline around the element."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'outline-color' property?",
+        "code": "outline-color: red;",
+        "explanation": "The 'outline-color' property in CSS is used to specify the color of the outline around an element. It can be set to any valid CSS color value. For example, 'outline-color: red;' sets the color of the outline to red."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'outline-width' property?",
+        "code": "outline-width: 3px;",
+        "explanation": "The 'outline-width' property in CSS is used to specify the width of the outline around an element. It can be set to a length value, such as pixels or ems. For example, 'outline-width: 3px;' sets the width of the outline to 3 pixels."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'outline-offset' property?",
+        "code": "outline-offset: 10px;",
+        "explanation": "The 'outline-offset' property in CSS is used to set the space between the outline and the edge of the element's border box. It allows you to control the distance between the outline and the element's border. For example, 'outline-offset: 10px;' adds a 10-pixel space between the outline and the element."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'color' property used for?",
+        "code": "color: blue;",
+        "explanation": "The 'color' property in CSS is used to specify the color of text content. It accepts a variety of color formats, including named colors, hexadecimal, RGB, HSL, and RGBA values. For example, 'color: blue;' sets the text color to blue."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'text-align' property?",
+        "code": "text-align: center;",
+        "explanation": "The 'text-align' property in CSS is used to horizontally align text content within its containing element. It accepts values such as 'left', 'right', 'center', 'justify', and 'start'. For example, 'text-align: center;' centers the text within its container."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'text-align-last' property?",
+        "code": "text-align-last: right;",
+        "explanation": "The 'text-align-last' property in CSS is used to specify the alignment of the last line of text within a block container or a line of text. It is primarily used in combination with the 'text-align' property to control the alignment of the last line when the text wraps onto multiple lines. For example, 'text-align-last: right;' aligns the last line of text to the right within its container."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'direction' property?",
+        "code": "direction: rtl;",
+        "explanation": "The 'direction' property in CSS is used to specify the direction of text content within an element. It controls the text flow direction, either from left to right (LTR) or from right to left (RTL). For example, 'direction: rtl;' sets the text direction to right-to-left."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'unicode-bidi' property?",
+        "code": "unicode-bidi: bidi-override;",
+        "explanation": "The 'unicode-bidi' property in CSS is used to control the directionality of text content that is embedded within another block of text with a different directionality. It is often used in conjunction with the 'direction' property to handle bidirectional text. For example, 'unicode-bidi: bidi-override;' overrides the bidirectional algorithm for the specific text content."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'vertical-align' property?",
+        "code": "vertical-align: middle;",
+        "explanation": "The 'vertical-align' property in CSS is used to vertically align inline or inline-block elements within a line box or other block-level container. It accepts various values, including 'top', 'middle', 'bottom', 'baseline', 'sub', 'super', and length values. For example, 'vertical-align: middle;' vertically aligns the element to the middle of its containing element."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'text-decoration-line' property?",
+        "code": "text-decoration-line: underline;",
+        "explanation": "The 'text-decoration-line' property in CSS is used to specify the type of line decoration to be used for text. It accepts values such as 'none', 'underline', 'overline', 'line-through', and 'underline overline'. For example, 'text-decoration-line: underline;' adds an underline to the text."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'text-decoration-color' property?",
+        "code": "text-decoration-color: red;",
+        "explanation": "The 'text-decoration-color' property in CSS is used to specify the color of the text decoration line. It accepts color values in various formats, including named colors, hexadecimal, RGB, HSL, and RGBA values. For example, 'text-decoration-color: red;' sets the color of the text decoration line to red."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'text-decoration-style' property?",
+        "code": "text-decoration-style: dashed;",
+        "explanation": "The 'text-decoration-style' property in CSS is used to specify the style of the text decoration line. It accepts values such as 'solid', 'double', 'dotted', 'dashed', and 'wavy'. For example, 'text-decoration-style: dashed;' sets the style of the text decoration line to dashed."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'text-decoration-thickness' property?",
+        "code": "text-decoration-thickness: 2px;",
+        "explanation": "The 'text-decoration-thickness' property in CSS is used to specify the thickness of the line used for text decoration. It accepts length values, such as pixels or em units. For example, 'text-decoration-thickness: 2px;' sets the thickness of the text decoration line to 2 pixels."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'text-decoration' property?",
+        "code": "text-decoration: underline dotted red;",
+        "explanation": "The 'text-decoration' property in CSS is a shorthand property used to set the line decorations for text content. It can specify the line style, color, and type all in one declaration. For example, 'text-decoration: underline dotted red;' adds an underline, dotted style, and red color to the text decoration line."
+    },
+    {
+        "language": "CSS",
+        "question": "What is the CSS 'text-transform' property?",
+        "code": "text-transform: uppercase;",
+        "explanation": "The 'text-transform' property in CSS is used to specify how the text should be capitalized. It accepts values such as 'uppercase', 'lowercase', 'capitalize', and 'none'. For example, 'text-transform: uppercase;' transforms the text to be displayed in uppercase letters."
+    },
+    {
+        "language": "CSS",
+        "question": "What are some CSS properties related to text spacing and indentation?",
+        "code": "text-indent: 20px;\nletter-spacing: 2px;\nline-height: 1.5;\nword-spacing: 5px;\nwhite-space: nowrap;",
+        "explanation": "The 'text-indent' property specifies the indentation of the first line in a block element.\nThe 'letter-spacing' property adjusts the spacing between characters in the text.\nThe 'line-height' property sets the height of a line box, affecting the spacing between lines of text.\nThe 'word-spacing' property adjusts the spacing between words in the text.\nThe 'white-space' property controls how white space inside an element is handled, such as collapsing multiple spaces into one or preserving line breaks."
+    },
+    {
+        "language": "CSS",
+        "question": "How to add text shadow in CSS?",
+        "code": "text-shadow: 2px 2px 4px #000000;",
+        "explanation": "The 'text-shadow' property adds shadow to text. It takes three values: horizontal shadow offset, vertical shadow offset, and blur radius of the shadow. Optionally, it can also take a color value."
+    }
+]

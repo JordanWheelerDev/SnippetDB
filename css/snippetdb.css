@@ -54,3 +54,7 @@ code {
   font-weight: bold;
   cursor: pointer;
 }
+
+.snipcontainer {
+  border: 2px solid #eaeaea;
+}

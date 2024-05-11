@@ -88,6 +88,9 @@ document.addEventListener("DOMContentLoaded", () => {
         case "react":
             searchInput.placeholder = "What is useReducer() hook in React?";
             break;
+        case "css":
+            searchInput.placeholder = "What are element selectors in CSS?";
+            break;
           default:
             searchInput.placeholder = "Enter your search query";
         }
